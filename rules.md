@@ -1,50 +1,85 @@
-# Reglas SPARQL
+# Rules
 
 
 ## CamelliaRequiresMediumSecurityLevel
 
-?sf a :SecurityFeature .
-?sf :hasSecurityLevel ?sl .
-FILTER (?sl != :MediumSecurityLevel) .
+DELETE {
+  ?sf ontocarmen:hasSecurityLevel ?sl .
+}
 
-?sf :hasSecurityConstraint ?sc .
-?sc a :Cipher .
-?sc :typeCipher "Camellia" .
+INSERT {
+  ?sf ontocarmen:hasSecurityLevel ontocarmen:MediumSecurityLevel .
+}
 
-=>
-DELETE
-?sf :hasSecurityLevel ?sl .
-
-INSERT
-?sf :hasSecurityLevel :MediumSecurityLevel .
+WHERE{
+   ?sf a ontocarmen:SecurityFeature .
+   ?sf ontocarmen:hasSecurityLevel ?sl .
+   FILTER (?sl != ontocarmen:MediumSecurityLevel) .
+   ?sf ontocarmen:hasSecurityConstraint ?sc .
+   ?sc a ontocarmen:Cipher .
+   ?sc ontocarmen:typeCipher "Camellia" .
+}
 
 
 ## ChaCha20RequiresVeryHighSecurityLevel
 
+DELETE {
+  ?sf ontocarmen:hasSecurityLevel ?sl .
+}
+
+INSERT {
+  ?sf ontocarmen:hasSecurityLevel ontocarmen:VeryHighSecurityLevel .
+}
+
+WHERE{
+   ?sf a ontocarmen:SecurityFeature .
+   ?sf ontocarmen:hasSecurityLevel ?sl .
+   FILTER (?sl != ontocarmen:VeryHighSecurityLevel) .
+   ?sf ontocarmen:hasSecurityConstraint ?sc .
+   ?sc a ontocarmen:Cipher .
+   ?sc ontocarmen:typeCipher "Camellia" .
+}
+
+
 ## AES128GCMRequiresHighSecurityLevel
 
+DELETE {
+  ?sf ontocarmen:hasSecurityLevel ?sl .
+}
+
+INSERT {
+  ?sf ontocarmen:hasSecurityLevel ontocarmen:HighSecurityLevel .
+}
+
+WHERE{
+   ?sf a ontocarmen:SecurityFeature .
+   ?sf ontocarmen:hasSecurityLevel ?sl .
+   FILTER (?sl != ontocarmen:HighSecurityLevel) .
+   ?sf ontocarmen:hasSecurityConstraint ?sc .
+   ?sc a ontocarmen:Cipher .
+   ?sc ontocarmen:typeCipher "AES128GCM" .
+}
 
 
 ## ConfidentialityRequiresChannel
 
-?sf a :SecurityFeature .
-?sf :hasProperty ?p .
-?p :typeProperty "confidentiality" .
+INSERT {
+    ?ch a :Channel .
+    ?sf :hasSecurityConstraint ?ch 
+}
 
-FILTER NOT EXISTS {
-    ?sf :hasSecurityConstraint ?sc .
-    ?sc a :Channel }
+WHERE {
+    ?sf a :SecurityFeature .
+    ?sf :hasProperty ?p .
+    ?p :typeProperty "confidentiality" .
 
-=>
-
-INSERT
-?ch a :Channel .
-?ch :typeChannel "HTTPS" .
-?sf :hasSecurityConstraint ?ch 
-
+    FILTER NOT EXISTS {
+        ?sf :hasSecurityConstraint ?sc .
+        ?sc a :Channel }
+}
 
 
-    
+
 
 
 ## SSLTSLRequiresCipher
