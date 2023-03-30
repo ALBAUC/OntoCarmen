@@ -1,0 +1,10 @@
+@prefix ontocarmen: <https://gsya.esi.uclm.es/ontocarmen#> .
+
+ontocarmen:SR2-Sensor-temp a ontocarmen:Sensor ;
+    ontocarmen:typeSensor "temperature" .
+
+ontocarmen:SR2-AssetType-at2 a ontocarmen:AssetType ;
+    ontocarmen:hasDevice ontocarmen:SR2-Sensor-temp .
+
+ontocarmen:SR2-SecurityRequirement a ontocarmen:SecurityRequirement ;
+    ontocarmen:hasAssetType ontocarmen:SR2-AssetType-at2 .
