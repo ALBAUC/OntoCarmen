@@ -7,7 +7,8 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
-     xmlns:ontocarmen="https://gsya.esi.uclm.es/ontocarmen/">
+     xmlns:ontocarmen="https://gsya.esi.uclm.es/ontocarmen#"
+     xmlns:ontocarmen1="https://gsya.esi.uclm.es/ontocarmen/">
     <Ontology rdf:about="https://gsya.esi.uclm.es/ontocarmen"/>
     
 
@@ -2123,12 +2124,12 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen#SR2-AssetType-at1">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/AssetType"/>
-        <ontocarmen:hasDevice rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR2-Controller-ard"/>
-        <ontocarmen:hasDevice rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR2-Sensor-hum"/>
-        <ontocarmen:hasDevice rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR2-Sensor-light"/>
-        <ontocarmen:hasDevice rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR2-Sensor-temp"/>
-        <ontocarmen:hasInfrastructure rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR2-Network-net"/>
-        <ontocarmen:hasInfrastructure rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR2-Protocol-prot"/>
+        <ontocarmen1:hasDevice rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR2-Controller-ard"/>
+        <ontocarmen1:hasDevice rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR2-Sensor-hum"/>
+        <ontocarmen1:hasDevice rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR2-Sensor-light"/>
+        <ontocarmen1:hasDevice rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR2-Sensor-temp"/>
+        <ontocarmen1:hasInfrastructure rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR2-Network-net"/>
+        <ontocarmen1:hasInfrastructure rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR2-Protocol-prot"/>
     </NamedIndividual>
     
 
@@ -2137,8 +2138,8 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen#SR2-AssetType-at2">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/AssetType"/>
-        <ontocarmen:hasInformation rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR2-Database-db"/>
-        <ontocarmen:hasInformation rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR2-Datastore-ds"/>
+        <ontocarmen1:hasInformation rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR2-Database-db"/>
+        <ontocarmen1:hasInformation rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR2-Datastore-ds"/>
     </NamedIndividual>
     
 
@@ -2147,7 +2148,7 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen#SR2-Channel-ch">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Channel"/>
-        <ontocarmen:typeChannel>HTTPS</ontocarmen:typeChannel>
+        <ontocarmen1:typeChannel>HTTPS</ontocarmen1:typeChannel>
     </NamedIndividual>
     
 
@@ -2156,7 +2157,7 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen#SR2-Cipher-c">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Cipher"/>
-        <ontocarmen:typeCipher>AES128</ontocarmen:typeCipher>
+        <ontocarmen1:typeCipher>AES128GCM</ontocarmen1:typeCipher>
     </NamedIndividual>
     
 
@@ -2165,7 +2166,7 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen#SR2-Controller-ard">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Controller"/>
-        <ontocarmen:typeController>microController</ontocarmen:typeController>
+        <ontocarmen1:typeController>microController</ontocarmen1:typeController>
     </NamedIndividual>
     
 
@@ -2174,7 +2175,7 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen#SR2-Database-db">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Database"/>
-        <ontocarmen:typeDatabase>NoSQL</ontocarmen:typeDatabase>
+        <ontocarmen1:typeDatabase>NoSQL</ontocarmen1:typeDatabase>
     </NamedIndividual>
     
 
@@ -2183,7 +2184,7 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen#SR2-Datastore-ds">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Datastore"/>
-        <ontocarmen:typeDatastore>HDFS</ontocarmen:typeDatastore>
+        <ontocarmen1:typeDatastore>HDFS</ontocarmen1:typeDatastore>
     </NamedIndividual>
     
 
@@ -2192,7 +2193,7 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen#SR2-Network-net">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Network"/>
-        <ontocarmen:typeNetwork>WLAN</ontocarmen:typeNetwork>
+        <ontocarmen1:typeNetwork>WLAN</ontocarmen1:typeNetwork>
     </NamedIndividual>
     
 
@@ -2201,8 +2202,8 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen#SR2-Property-p1">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Property"/>
-        <ontocarmen:propertyHasSecurityConstraint rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR2-Cipher-c"/>
-        <ontocarmen:typeProperty>Integrity</ontocarmen:typeProperty>
+        <ontocarmen1:propertyHasSecurityConstraint rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR2-Cipher-c"/>
+        <ontocarmen1:typeProperty>Integrity</ontocarmen1:typeProperty>
     </NamedIndividual>
     
 
@@ -2211,8 +2212,8 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen#SR2-Property-p2">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Property"/>
-        <ontocarmen:propertyHasSecurityConstraint rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR2-Channel-ch"/>
-        <ontocarmen:typeProperty>Confidentiality</ontocarmen:typeProperty>
+        <ontocarmen1:propertyHasSecurityConstraint rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR2-Channel-ch"/>
+        <ontocarmen1:typeProperty>Confidentiality</ontocarmen1:typeProperty>
     </NamedIndividual>
     
 
@@ -2221,7 +2222,7 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen#SR2-Protocol-prot">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Protocol"/>
-        <ontocarmen:typeProtocol>BLE</ontocarmen:typeProtocol>
+        <ontocarmen1:typeProtocol>BLE</ontocarmen1:typeProtocol>
     </NamedIndividual>
     
 
@@ -2230,9 +2231,9 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen#SR2-SecurityFeature-sf1">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SecurityFeature"/>
-        <ontocarmen:hasProperty rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR2-Property-p1"/>
-        <ontocarmen:hasSecurityConstraint rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR2-Cipher-c"/>
-        <ontocarmen:hasSecurityLevel rdf:resource="https://gsya.esi.uclm.es/ontocarmen/VeryHighSecurityLevel"/>
+        <ontocarmen1:hasProperty rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR2-Property-p1"/>
+        <ontocarmen1:hasSecurityConstraint rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR2-Cipher-c"/>
+        <ontocarmen1:hasSecurityLevel rdf:resource="https://gsya.esi.uclm.es/ontocarmen/VeryHighSecurityLevel"/>
     </NamedIndividual>
     
 
@@ -2241,9 +2242,9 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen#SR2-SecurityFeature-sf2">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SecurityFeature"/>
-        <ontocarmen:hasProperty rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR2-Property-p2"/>
-        <ontocarmen:hasSecurityConstraint rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR2-Channel-ch"/>
-        <ontocarmen:hasSecurityLevel rdf:resource="https://gsya.esi.uclm.es/ontocarmen/HighSecurityLevel"/>
+        <ontocarmen1:hasProperty rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR2-Property-p2"/>
+        <ontocarmen1:hasSecurityConstraint rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR2-Channel-ch"/>
+        <ontocarmen1:hasSecurityLevel rdf:resource="https://gsya.esi.uclm.es/ontocarmen/HighSecurityLevel"/>
     </NamedIndividual>
     
 
@@ -2252,12 +2253,12 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen#SR2-SecurityRequirement">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SecurityRequirement"/>
-        <ontocarmen:hasAssetType rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR2-AssetType-at1"/>
-        <ontocarmen:hasAssetType rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR2-AssetType-at2"/>
-        <ontocarmen:hasSecurityFeature rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR2-SecurityFeature-sf1"/>
-        <ontocarmen:hasSecurityFeature rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR2-SecurityFeature-sf2"/>
-        <ontocarmen:typeRelationship>encryptedInformation</ontocarmen:typeRelationship>
-        <ontocarmen:typeRelationship>secureCommunication</ontocarmen:typeRelationship>
+        <ontocarmen1:hasAssetType rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR2-AssetType-at1"/>
+        <ontocarmen1:hasAssetType rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR2-AssetType-at2"/>
+        <ontocarmen1:hasSecurityFeature rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR2-SecurityFeature-sf1"/>
+        <ontocarmen1:hasSecurityFeature rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR2-SecurityFeature-sf2"/>
+        <ontocarmen1:typeRelationship>encryptedInformation</ontocarmen1:typeRelationship>
+        <ontocarmen1:typeRelationship>secureCommunication</ontocarmen1:typeRelationship>
     </NamedIndividual>
     
 
@@ -2266,7 +2267,7 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen#SR2-Sensor-hum">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Sensor"/>
-        <ontocarmen:typeSensor>humidity</ontocarmen:typeSensor>
+        <ontocarmen1:typeSensor>humidity</ontocarmen1:typeSensor>
     </NamedIndividual>
     
 
@@ -2275,7 +2276,7 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen#SR2-Sensor-light">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Sensor"/>
-        <ontocarmen:typeSensor>luminosity</ontocarmen:typeSensor>
+        <ontocarmen1:typeSensor>luminosity</ontocarmen1:typeSensor>
     </NamedIndividual>
     
 
@@ -2284,7 +2285,7 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen#SR2-Sensor-temp">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Sensor"/>
-        <ontocarmen:typeSensor>temperature</ontocarmen:typeSensor>
+        <ontocarmen1:typeSensor>temperature</ontocarmen1:typeSensor>
     </NamedIndividual>
     
 
@@ -2293,7 +2294,7 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen#SR3-Actuator-nut">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Actuator"/>
-        <ontocarmen:typeActuator>electric</ontocarmen:typeActuator>
+        <ontocarmen1:typeActuator>electric</ontocarmen1:typeActuator>
     </NamedIndividual>
     
 
@@ -2302,10 +2303,10 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen#SR3-AssetType-at1">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/AssetType"/>
-        <ontocarmen:hasDevice rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-Actuator-nut"/>
-        <ontocarmen:hasDevice rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-Controller-ard"/>
-        <ontocarmen:hasInfrastructure rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-Network-net"/>
-        <ontocarmen:hasInfrastructure rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-Protocol-prot"/>
+        <ontocarmen1:hasDevice rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-Actuator-nut"/>
+        <ontocarmen1:hasDevice rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-Controller-ard"/>
+        <ontocarmen1:hasInfrastructure rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-Network-net"/>
+        <ontocarmen1:hasInfrastructure rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-Protocol-prot"/>
     </NamedIndividual>
     
 
@@ -2314,9 +2315,9 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen#SR3-AssetType-at2">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/AssetType"/>
-        <ontocarmen:assetTypeHasAssetType rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-AssetType-at1"/>
-        <ontocarmen:hasInfrastructure rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-Service-s"/>
-        <ontocarmen:hasUser rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-User-user"/>
+        <ontocarmen1:assetTypeHasAssetType rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-AssetType-at1"/>
+        <ontocarmen1:hasInfrastructure rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-Service-s"/>
+        <ontocarmen1:hasUser rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-User-user"/>
     </NamedIndividual>
     
 
@@ -2325,7 +2326,7 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen#SR3-Certificate-cert">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Certificate"/>
-        <ontocarmen:typeCertificate>x509</ontocarmen:typeCertificate>
+        <ontocarmen1:typeCertificate>x509</ontocarmen1:typeCertificate>
     </NamedIndividual>
     
 
@@ -2334,7 +2335,7 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen#SR3-Channel-ch2">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Channel"/>
-        <ontocarmen:typeChannel>HTTPS</ontocarmen:typeChannel>
+        <ontocarmen1:typeChannel>HTTPS</ontocarmen1:typeChannel>
     </NamedIndividual>
     
 
@@ -2343,7 +2344,7 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen#SR3-Cipher-c">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Cipher"/>
-        <ontocarmen:typeCipher>AES128</ontocarmen:typeCipher>
+        <ontocarmen1:typeCipher>AES128GCM</ontocarmen1:typeCipher>
     </NamedIndividual>
     
 
@@ -2352,7 +2353,7 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen#SR3-Controller-ard">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Controller"/>
-        <ontocarmen:typeController>microController</ontocarmen:typeController>
+        <ontocarmen1:typeController>microController</ontocarmen1:typeController>
     </NamedIndividual>
     
 
@@ -2361,7 +2362,7 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen#SR3-Network-net">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Network"/>
-        <ontocarmen:typeNetwork>WLAN</ontocarmen:typeNetwork>
+        <ontocarmen1:typeNetwork>WLAN</ontocarmen1:typeNetwork>
     </NamedIndividual>
     
 
@@ -2370,9 +2371,9 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen#SR3-Property-p1">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Property"/>
-        <ontocarmen:propertyHasSecurityConstraint rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-Certificate-cert"/>
-        <ontocarmen:typeProperty>Authentication</ontocarmen:typeProperty>
-        <ontocarmen:typeProperty>Authorisation</ontocarmen:typeProperty>
+        <ontocarmen1:propertyHasSecurityConstraint rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-Certificate-cert"/>
+        <ontocarmen1:typeProperty>Authentication</ontocarmen1:typeProperty>
+        <ontocarmen1:typeProperty>Authorisation</ontocarmen1:typeProperty>
     </NamedIndividual>
     
 
@@ -2381,8 +2382,8 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen#SR3-Property-p2">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Property"/>
-        <ontocarmen:propertyHasSecurityConstraint rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-Cipher-c"/>
-        <ontocarmen:typeProperty>Integrity</ontocarmen:typeProperty>
+        <ontocarmen1:propertyHasSecurityConstraint rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-Cipher-c"/>
+        <ontocarmen1:typeProperty>Integrity</ontocarmen1:typeProperty>
     </NamedIndividual>
     
 
@@ -2390,8 +2391,9 @@
     <!-- https://gsya.esi.uclm.es/ontocarmen#SR3-Property-p3 -->
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen#SR3-Property-p3">
-        <ontocarmen:propertyHasSecurityConstraint rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-Channel-ch2"/>
-        <ontocarmen:typeProperty>Confidentiality</ontocarmen:typeProperty>
+        <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Property"/>
+        <ontocarmen1:propertyHasSecurityConstraint rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-Channel-ch2"/>
+        <ontocarmen1:typeProperty>Confidentiality</ontocarmen1:typeProperty>
     </NamedIndividual>
     
 
@@ -2400,7 +2402,7 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen#SR3-Property-p4">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Property"/>
-        <ontocarmen:typeProperty>Audit</ontocarmen:typeProperty>
+        <ontocarmen1:typeProperty>Audit</ontocarmen1:typeProperty>
     </NamedIndividual>
     
 
@@ -2409,7 +2411,7 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen#SR3-Protocol-prot">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Protocol"/>
-        <ontocarmen:typeProtocol>Wifi</ontocarmen:typeProtocol>
+        <ontocarmen1:typeProtocol>Wifi</ontocarmen1:typeProtocol>
     </NamedIndividual>
     
 
@@ -2418,11 +2420,11 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen#SR3-SecurityFeature-sf1">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SecurityFeature"/>
-        <ontocarmen:hasProperty rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-Property-p2"/>
-        <ontocarmen:hasProperty rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-Property-p3"/>
-        <ontocarmen:hasSecurityConstraint rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-Channel-ch2"/>
-        <ontocarmen:hasSecurityConstraint rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-Cipher-c"/>
-        <ontocarmen:hasSecurityLevel rdf:resource="https://gsya.esi.uclm.es/ontocarmen/VeryHighSecurityLevel"/>
+        <ontocarmen1:hasProperty rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-Property-p2"/>
+        <ontocarmen1:hasProperty rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-Property-p3"/>
+        <ontocarmen1:hasSecurityConstraint rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-Channel-ch2"/>
+        <ontocarmen1:hasSecurityConstraint rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-Cipher-c"/>
+        <ontocarmen1:hasSecurityLevel rdf:resource="https://gsya.esi.uclm.es/ontocarmen/VeryHighSecurityLevel"/>
     </NamedIndividual>
     
 
@@ -2431,11 +2433,11 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen#SR3-SecurityFeature-sf2">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SecurityFeature"/>
-        <ontocarmen:hasProperty rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-Property-p1"/>
-        <ontocarmen:hasProperty rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-Property-p4"/>
-        <ontocarmen:hasSecurityConstraint rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-Certificate-cert"/>
-        <ontocarmen:hasSecurityLevel rdf:resource="https://gsya.esi.uclm.es/ontocarmen/HighSecurityLevel"/>
-        <ontocarmen:condition>user isAuthenticated &amp; isAuthorised</ontocarmen:condition>
+        <ontocarmen1:hasProperty rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-Property-p1"/>
+        <ontocarmen1:hasProperty rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-Property-p4"/>
+        <ontocarmen1:hasSecurityConstraint rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-Certificate-cert"/>
+        <ontocarmen1:hasSecurityLevel rdf:resource="https://gsya.esi.uclm.es/ontocarmen/HighSecurityLevel"/>
+        <ontocarmen1:condition>user isAuthenticated &amp; isAuthorised</ontocarmen1:condition>
     </NamedIndividual>
     
 
@@ -2444,13 +2446,13 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen#SR3-SecurityRequirement">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SecurityRequirement"/>
-        <ontocarmen:hasAssetType rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-AssetType-at1"/>
-        <ontocarmen:hasAssetType rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-AssetType-at2"/>
-        <ontocarmen:hasSecurityFeature rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-SecurityFeature-sf1"/>
-        <ontocarmen:hasSecurityFeature rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-SecurityFeature-sf2"/>
-        <ontocarmen:typeRelationship>auditGuaranteed</ontocarmen:typeRelationship>
-        <ontocarmen:typeRelationship>secureCommunication</ontocarmen:typeRelationship>
-        <ontocarmen:typeRelationship>userAuthenticated</ontocarmen:typeRelationship>
+        <ontocarmen1:hasAssetType rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-AssetType-at1"/>
+        <ontocarmen1:hasAssetType rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-AssetType-at2"/>
+        <ontocarmen1:hasSecurityFeature rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-SecurityFeature-sf1"/>
+        <ontocarmen1:hasSecurityFeature rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-SecurityFeature-sf2"/>
+        <ontocarmen1:typeRelationship>auditGuaranteed</ontocarmen1:typeRelationship>
+        <ontocarmen1:typeRelationship>secureCommunication</ontocarmen1:typeRelationship>
+        <ontocarmen1:typeRelationship>userAuthenticated</ontocarmen1:typeRelationship>
     </NamedIndividual>
     
 
@@ -2459,7 +2461,7 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen#SR3-Service-s">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Service"/>
-        <ontocarmen:typeService>AuthenticationSystem</ontocarmen:typeService>
+        <ontocarmen1:typeService>AuthenticationSystem</ontocarmen1:typeService>
     </NamedIndividual>
     
 
@@ -2468,7 +2470,7 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen#SR3-User-user">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/User"/>
-        <ontocarmen:typeUser>consumer</ontocarmen:typeUser>
+        <ontocarmen1:typeUser>consumer</ontocarmen1:typeUser>
     </NamedIndividual>
     
 
@@ -2477,7 +2479,7 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen/ASustainabilityLabel">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SustainabilityLabel"/>
-        <ontocarmen:isMoreSustainabilityThan rdf:resource="https://gsya.esi.uclm.es/ontocarmen/BSustainabilityLabel"/>
+        <ontocarmen1:isMoreSustainabilityThan rdf:resource="https://gsya.esi.uclm.es/ontocarmen/BSustainabilityLabel"/>
     </NamedIndividual>
     
 
@@ -2486,7 +2488,7 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen/BSustainabilityLabel">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SustainabilityLabel"/>
-        <ontocarmen:isMoreSustainabilityThan rdf:resource="https://gsya.esi.uclm.es/ontocarmen/CSustainabilityLabel"/>
+        <ontocarmen1:isMoreSustainabilityThan rdf:resource="https://gsya.esi.uclm.es/ontocarmen/CSustainabilityLabel"/>
     </NamedIndividual>
     
 
@@ -2495,7 +2497,7 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen/CSustainabilityLabel">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SustainabilityLabel"/>
-        <ontocarmen:isMoreSustainabilityThan rdf:resource="https://gsya.esi.uclm.es/ontocarmen/DSustainabilityLabel"/>
+        <ontocarmen1:isMoreSustainabilityThan rdf:resource="https://gsya.esi.uclm.es/ontocarmen/DSustainabilityLabel"/>
     </NamedIndividual>
     
 
@@ -2504,7 +2506,7 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen/DSustainabilityLabel">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SustainabilityLabel"/>
-        <ontocarmen:isMoreSustainabilityThan rdf:resource="https://gsya.esi.uclm.es/ontocarmen/ESustainabilityLabel"/>
+        <ontocarmen1:isMoreSustainabilityThan rdf:resource="https://gsya.esi.uclm.es/ontocarmen/ESustainabilityLabel"/>
     </NamedIndividual>
     
 
@@ -2513,7 +2515,7 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen/ESustainabilityLabel">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SustainabilityLabel"/>
-        <ontocarmen:isMoreSustainabilityThan rdf:resource="https://gsya.esi.uclm.es/ontocarmen/FSustainabilityLabel"/>
+        <ontocarmen1:isMoreSustainabilityThan rdf:resource="https://gsya.esi.uclm.es/ontocarmen/FSustainabilityLabel"/>
     </NamedIndividual>
     
 
@@ -2522,7 +2524,7 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen/FSustainabilityLabel">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SustainabilityLabel"/>
-        <ontocarmen:isMoreSustainabilityThan rdf:resource="https://gsya.esi.uclm.es/ontocarmen/GSustainabilityLabel"/>
+        <ontocarmen1:isMoreSustainabilityThan rdf:resource="https://gsya.esi.uclm.es/ontocarmen/GSustainabilityLabel"/>
     </NamedIndividual>
     
 
@@ -2539,8 +2541,8 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen/HighSecurityLevel">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SecurityLevel"/>
-        <ontocarmen:isLessSecureThan rdf:resource="https://gsya.esi.uclm.es/ontocarmen/VeryHighSecurityLevel"/>
-        <ontocarmen:isMoreSecureThan rdf:resource="https://gsya.esi.uclm.es/ontocarmen/MediumSecurityLevel"/>
+        <ontocarmen1:isLessSecureThan rdf:resource="https://gsya.esi.uclm.es/ontocarmen/VeryHighSecurityLevel"/>
+        <ontocarmen1:isMoreSecureThan rdf:resource="https://gsya.esi.uclm.es/ontocarmen/MediumSecurityLevel"/>
     </NamedIndividual>
     
 
@@ -2549,8 +2551,8 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen/LowSecurityLevel">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SecurityLevel"/>
-        <ontocarmen:isLessSecureThan rdf:resource="https://gsya.esi.uclm.es/ontocarmen/MediumSecurityLevel"/>
-        <ontocarmen:isMoreSecureThan rdf:resource="https://gsya.esi.uclm.es/ontocarmen/VeryLowSecurityLevel"/>
+        <ontocarmen1:isLessSecureThan rdf:resource="https://gsya.esi.uclm.es/ontocarmen/MediumSecurityLevel"/>
+        <ontocarmen1:isMoreSecureThan rdf:resource="https://gsya.esi.uclm.es/ontocarmen/VeryLowSecurityLevel"/>
     </NamedIndividual>
     
 
@@ -2559,8 +2561,8 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen/MediumSecurityLevel">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SecurityLevel"/>
-        <ontocarmen:isLessSecureThan rdf:resource="https://gsya.esi.uclm.es/ontocarmen/HighSecurityLevel"/>
-        <ontocarmen:isMoreSecureThan rdf:resource="https://gsya.esi.uclm.es/ontocarmen/LowSecurityLevel"/>
+        <ontocarmen1:isLessSecureThan rdf:resource="https://gsya.esi.uclm.es/ontocarmen/HighSecurityLevel"/>
+        <ontocarmen1:isMoreSecureThan rdf:resource="https://gsya.esi.uclm.es/ontocarmen/LowSecurityLevel"/>
     </NamedIndividual>
     
 
@@ -2569,10 +2571,10 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen/SR1-AssetType-at">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/AssetType"/>
-        <ontocarmen:hasDevice rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-Controller-ard"/>
-        <ontocarmen:hasDevice rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-Sensor-temp"/>
-        <ontocarmen:hasInfrastructure rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-Network-net"/>
-        <ontocarmen:hasInfrastructure rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-Protocol-prot"/>
+        <ontocarmen1:hasDevice rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-Controller-ard"/>
+        <ontocarmen1:hasDevice rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-Sensor-temp"/>
+        <ontocarmen1:hasInfrastructure rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-Network-net"/>
+        <ontocarmen1:hasInfrastructure rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-Protocol-prot"/>
     </NamedIndividual>
     
 
@@ -2581,8 +2583,8 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen/SR1-Channel-ch">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Channel"/>
-        <ontocarmen:securityConstraintHasProperty rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-Property-p"/>
-        <ontocarmen:typeChannel>HTTPS</ontocarmen:typeChannel>
+        <ontocarmen1:securityConstraintHasProperty rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-Property-p"/>
+        <ontocarmen1:typeChannel>HTTPS</ontocarmen1:typeChannel>
     </NamedIndividual>
     
 
@@ -2590,8 +2592,9 @@
     <!-- https://gsya.esi.uclm.es/ontocarmen/SR1-Cipher-c -->
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen/SR1-Cipher-c">
-        <ontocarmen:securityConstraintHasProperty rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-Property-p"/>
-        <ontocarmen:typeCipher>Camellia</ontocarmen:typeCipher>
+        <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Cipher"/>
+        <ontocarmen1:securityConstraintHasProperty rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-Property-p"/>
+        <ontocarmen1:typeCipher>Camellia</ontocarmen1:typeCipher>
     </NamedIndividual>
     
 
@@ -2600,9 +2603,9 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen/SR1-Controller-ard">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Controller"/>
-        <ontocarmen:deviceHasInfrastructure rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-Network-net"/>
-        <ontocarmen:deviceHasInfrastructure rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-Protocol-prot"/>
-        <ontocarmen:typeController>microController</ontocarmen:typeController>
+        <ontocarmen1:deviceHasInfrastructure rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-Network-net"/>
+        <ontocarmen1:deviceHasInfrastructure rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-Protocol-prot"/>
+        <ontocarmen1:typeController>microController</ontocarmen1:typeController>
     </NamedIndividual>
     
 
@@ -2611,9 +2614,9 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen/SR1-Network-net">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Network"/>
-        <ontocarmen:infrastructureHasDevice rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-Controller-ard"/>
-        <ontocarmen:infrastructureHasDevice rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-Sensor-temp"/>
-        <ontocarmen:typeNetwork>WLAN</ontocarmen:typeNetwork>
+        <ontocarmen1:infrastructureHasDevice rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-Controller-ard"/>
+        <ontocarmen1:infrastructureHasDevice rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-Sensor-temp"/>
+        <ontocarmen1:typeNetwork>WLAN</ontocarmen1:typeNetwork>
     </NamedIndividual>
     
 
@@ -2622,9 +2625,9 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen/SR1-Property-p">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Property"/>
-        <ontocarmen:propertyHasSecurityConstraint rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-Channel-ch"/>
-        <ontocarmen:propertyHasSecurityConstraint rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-Cipher-c"/>
-        <ontocarmen:typeProperty>confidentiality</ontocarmen:typeProperty>
+        <ontocarmen1:propertyHasSecurityConstraint rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-Channel-ch"/>
+        <ontocarmen1:propertyHasSecurityConstraint rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-Cipher-c"/>
+        <ontocarmen1:typeProperty>confidentiality</ontocarmen1:typeProperty>
     </NamedIndividual>
     
 
@@ -2633,10 +2636,10 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen/SR1-Protocol-prot">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Protocol"/>
-        <ontocarmen:infrastructureHasDevice rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-Controller-ard"/>
-        <ontocarmen:infrastructureHasDevice rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-Sensor-temp"/>
-        <ontocarmen:typeProtocol>BLE</ontocarmen:typeProtocol>
-        <ontocarmen:typeProtocol>RFID</ontocarmen:typeProtocol>
+        <ontocarmen1:infrastructureHasDevice rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-Controller-ard"/>
+        <ontocarmen1:infrastructureHasDevice rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-Sensor-temp"/>
+        <ontocarmen1:typeProtocol>BLE</ontocarmen1:typeProtocol>
+        <ontocarmen1:typeProtocol>RFID</ontocarmen1:typeProtocol>
     </NamedIndividual>
     
 
@@ -2645,11 +2648,11 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen/SR1-SecurityFeature-sf">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SecurityFeature"/>
-        <ontocarmen:hasAssetType rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-AssetType-at"/>
-        <ontocarmen:hasProperty rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-Property-p"/>
-        <ontocarmen:hasSecurityConstraint rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-Channel-ch"/>
-        <ontocarmen:hasSecurityConstraint rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-Cipher-c"/>
-        <ontocarmen:hasSecurityLevel rdf:resource="https://gsya.esi.uclm.es/ontocarmen/HighSecurityLevel"/>
+        <ontocarmen1:hasAssetType rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-AssetType-at"/>
+        <ontocarmen1:hasProperty rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-Property-p"/>
+        <ontocarmen1:hasSecurityConstraint rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-Channel-ch"/>
+        <ontocarmen1:hasSecurityConstraint rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-Cipher-c"/>
+        <ontocarmen1:hasSecurityLevel rdf:resource="https://gsya.esi.uclm.es/ontocarmen/HighSecurityLevel"/>
     </NamedIndividual>
     
 
@@ -2658,9 +2661,9 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen/SR1-SecurityRequirement">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SecurityRequirement"/>
-        <ontocarmen:hasAssetType rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-AssetType-at"/>
-        <ontocarmen:hasSecurityFeature rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-SecurityFeature-sf"/>
-        <ontocarmen:typeRelationship>secureCommunication</ontocarmen:typeRelationship>
+        <ontocarmen1:hasAssetType rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-AssetType-at"/>
+        <ontocarmen1:hasSecurityFeature rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-SecurityFeature-sf"/>
+        <ontocarmen1:typeRelationship>secureCommunication</ontocarmen1:typeRelationship>
     </NamedIndividual>
     
 
@@ -2669,9 +2672,9 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen/SR1-Sensor-temp">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Sensor"/>
-        <ontocarmen:deviceHasInfrastructure rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-Network-net"/>
-        <ontocarmen:deviceHasInfrastructure rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-Protocol-prot"/>
-        <ontocarmen:typeSensor>temperature</ontocarmen:typeSensor>
+        <ontocarmen1:deviceHasInfrastructure rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-Network-net"/>
+        <ontocarmen1:deviceHasInfrastructure rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-Protocol-prot"/>
+        <ontocarmen1:typeSensor>temperature</ontocarmen1:typeSensor>
     </NamedIndividual>
     
 
@@ -2680,7 +2683,7 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen/VeryHighSecurityLevel">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SecurityLevel"/>
-        <ontocarmen:isMoreSecureThan rdf:resource="https://gsya.esi.uclm.es/ontocarmen/HighSecurityLevel"/>
+        <ontocarmen1:isMoreSecureThan rdf:resource="https://gsya.esi.uclm.es/ontocarmen/HighSecurityLevel"/>
     </NamedIndividual>
     
 
@@ -2689,7 +2692,7 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen/VeryLowSecurityLevel">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SecurityLevel"/>
-        <ontocarmen:isLessSecureThan rdf:resource="https://gsya.esi.uclm.es/ontocarmen/LowSecurityLevel"/>
+        <ontocarmen1:isLessSecureThan rdf:resource="https://gsya.esi.uclm.es/ontocarmen/LowSecurityLevel"/>
     </NamedIndividual>
     
 

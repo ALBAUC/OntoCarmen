@@ -79,16 +79,44 @@ WHERE {
 }
 
 
+## AuthenticationRequiresPassword
+
+INSERT {
+    ?ch pa :Password .
+    ?sf :hasSecurityConstraint ?ch 
+}
+
+WHERE {
+    ?sf a :SecurityFeature .
+    ?sf :hasProperty ?p .
+    ?p :typeProperty "authentication" .
+
+    FILTER NOT EXISTS {
+        ?sf :hasSecurityConstraint ?sc .
+        ?sc a :Password }
+}
 
 
+## AuthenticationAndHighSLRequiresMultifactorPassword
 
-## SSLTSLRequiresCipher
+INSERT {
+    ?ch pa :Password .
+    ?pa :typePassword "multiFactor" .
+    ?sf :hasSecurityConstraint ?ch
+}
 
-SecurityFeature
-- SecurityConstraint
-    - Channel = SSLTSL
-- SecurityConstraint
-    - Cipher
+WHERE {
+    ?sf a :SecurityFeature .
+    ?sf :hasProperty ?p .
+    ?p :typeProperty "authentication" .
+    ?sf :hasSecurityLevel ?sl .
+
+    FILTER (?sl = ontocarmen:HighSecurityLevel) .
+
+    FILTER NOT EXISTS {
+        ?sf :hasSecurityConstraint ?sc .
+        ?sc a :Password }
+}
 
 
 
