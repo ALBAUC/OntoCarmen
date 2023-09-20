@@ -898,7 +898,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="https://gsya.esi.uclm.es/ontocarmen/AssetType"/>
+        <rdfs:domain rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Asset"/>
         <rdfs:range rdf:resource="https://gsya.esi.uclm.es/ontocarmen/AppAndService"/>
     </ObjectProperty>
     
@@ -910,8 +910,8 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="https://gsya.esi.uclm.es/ontocarmen/AssetType"/>
-        <rdfs:range rdf:resource="https://gsya.esi.uclm.es/ontocarmen/AssetType"/>
+        <rdfs:domain rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Asset"/>
+        <rdfs:range rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Asset"/>
     </ObjectProperty>
     
 
@@ -922,7 +922,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="https://gsya.esi.uclm.es/ontocarmen/AssetType"/>
+        <rdfs:domain rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Asset"/>
         <rdfs:range rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Device"/>
     </ObjectProperty>
     
@@ -934,7 +934,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="https://gsya.esi.uclm.es/ontocarmen/AssetType"/>
+        <rdfs:domain rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Asset"/>
         <rdfs:range rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Information"/>
     </ObjectProperty>
     
@@ -946,7 +946,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="https://gsya.esi.uclm.es/ontocarmen/AssetType"/>
+        <rdfs:domain rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Asset"/>
         <rdfs:range rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Infrastructure"/>
     </ObjectProperty>
     
@@ -958,7 +958,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="https://gsya.esi.uclm.es/ontocarmen/AssetType"/>
+        <rdfs:domain rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Asset"/>
         <rdfs:range rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Platform"/>
     </ObjectProperty>
     
@@ -970,7 +970,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
-        <rdfs:domain rdf:resource="https://gsya.esi.uclm.es/ontocarmen/AssetType"/>
+        <rdfs:domain rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Asset"/>
         <rdfs:range rdf:resource="https://gsya.esi.uclm.es/ontocarmen/User"/>
     </ObjectProperty>
     
@@ -1119,7 +1119,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SecurityRequirement"/>
-        <rdfs:range rdf:resource="https://gsya.esi.uclm.es/ontocarmen/AssetType"/>
+        <rdfs:range rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Asset"/>
     </ObjectProperty>
     
 
@@ -1402,7 +1402,7 @@
             <Restriction>
                 <onProperty rdf:resource="https://gsya.esi.uclm.es/ontocarmen/securityRequirementHasAssetType"/>
                 <qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</qualifiedCardinality>
-                <onClass rdf:resource="https://gsya.esi.uclm.es/ontocarmen/AssetType"/>
+                <onClass rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Asset"/>
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1416,9 +1416,9 @@
     
 
 
-    <!-- https://gsya.esi.uclm.es/ontocarmen/AssetType -->
+    <!-- https://gsya.esi.uclm.es/ontocarmen/Asset -->
 
-    <Class rdf:about="https://gsya.esi.uclm.es/ontocarmen/AssetType">
+    <Class rdf:about="https://gsya.esi.uclm.es/ontocarmen/Asset">
         <rdfs:subClassOf>
             <Class>
                 <intersectionOf rdf:parseType="Collection">
@@ -1446,7 +1446,7 @@
             <Restriction>
                 <onProperty rdf:resource="https://gsya.esi.uclm.es/ontocarmen/assetTypeHasAssetType"/>
                 <minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">0</minQualifiedCardinality>
-                <onClass rdf:resource="https://gsya.esi.uclm.es/ontocarmen/AssetType"/>
+                <onClass rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Asset"/>
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1992,7 +1992,7 @@
             <Restriction>
                 <onProperty rdf:resource="https://gsya.esi.uclm.es/ontocarmen/securityRequirementHasAssetType"/>
                 <minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</minQualifiedCardinality>
-                <onClass rdf:resource="https://gsya.esi.uclm.es/ontocarmen/AssetType"/>
+                <onClass rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Asset"/>
             </Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2120,10 +2120,10 @@
     
 
 
-    <!-- https://gsya.esi.uclm.es/ontocarmen#SR2-AssetType-at1 -->
+    <!-- https://gsya.esi.uclm.es/ontocarmen#SR2-Asset-a1 -->
 
-    <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen#SR2-AssetType-at1">
-        <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/AssetType"/>
+    <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen#SR2-Asset-a1">
+        <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Asset"/>
         <ontocarmen1:assetTypeHasDevice rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR2-Controller-ard"/>
         <ontocarmen1:assetTypeHasDevice rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR2-Sensor-hum"/>
         <ontocarmen1:assetTypeHasDevice rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR2-Sensor-light"/>
@@ -2134,10 +2134,10 @@
     
 
 
-    <!-- https://gsya.esi.uclm.es/ontocarmen#SR2-AssetType-at2 -->
+    <!-- https://gsya.esi.uclm.es/ontocarmen#SR2-Asset-a2 -->
 
-    <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen#SR2-AssetType-at2">
-        <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/AssetType"/>
+    <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen#SR2-Asset-a2">
+        <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Asset"/>
         <ontocarmen1:assetTypeHasInformation rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR2-Database-db"/>
         <ontocarmen1:assetTypeHasInformation rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR2-Datastore-ds"/>
     </NamedIndividual>
@@ -2253,8 +2253,8 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen#SR2-SecurityRequirement">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SecurityRequirement"/>
-        <ontocarmen1:securityRequirementHasAssetType rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR2-AssetType-at1"/>
-        <ontocarmen1:securityRequirementHasAssetType rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR2-AssetType-at2"/>
+        <ontocarmen1:securityRequirementHasAssetType rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR2-Asset-a1"/>
+        <ontocarmen1:securityRequirementHasAssetType rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR2-Asset-a2"/>
         <ontocarmen1:securityRequirementHasSecurityFeature rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR2-SecurityFeature-sf1"/>
         <ontocarmen1:securityRequirementHasSecurityFeature rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR2-SecurityFeature-sf2"/>
         <ontocarmen1:typeRelationship>encryptedInformation</ontocarmen1:typeRelationship>
@@ -2299,10 +2299,10 @@
     
 
 
-    <!-- https://gsya.esi.uclm.es/ontocarmen#SR3-AssetType-at1 -->
+    <!-- https://gsya.esi.uclm.es/ontocarmen#SR3-Asset-a1 -->
 
-    <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen#SR3-AssetType-at1">
-        <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/AssetType"/>
+    <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen#SR3-Asset-a1">
+        <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Asset"/>
         <ontocarmen1:assetTypeHasDevice rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-Actuator-nut"/>
         <ontocarmen1:assetTypeHasDevice rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-Controller-ard"/>
         <ontocarmen1:assetTypeHasInfrastructure rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-Network-net"/>
@@ -2311,11 +2311,11 @@
     
 
 
-    <!-- https://gsya.esi.uclm.es/ontocarmen#SR3-AssetType-at2 -->
+    <!-- https://gsya.esi.uclm.es/ontocarmen#SR3-Asset-a2 -->
 
-    <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen#SR3-AssetType-at2">
-        <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/AssetType"/>
-        <ontocarmen1:assetTypeHasAssetType rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-AssetType-at1"/>
+    <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen#SR3-Asset-a2">
+        <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Asset"/>
+        <ontocarmen1:assetTypeHasAssetType rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-Asset-a1"/>
         <ontocarmen1:assetTypeHasInfrastructure rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-Service-s"/>
         <ontocarmen1:assetTypeHasUser rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-User-user"/>
     </NamedIndividual>
@@ -2446,8 +2446,8 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen#SR3-SecurityRequirement">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SecurityRequirement"/>
-        <ontocarmen1:securityRequirementHasAssetType rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-AssetType-at1"/>
-        <ontocarmen1:securityRequirementHasAssetType rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-AssetType-at2"/>
+        <ontocarmen1:securityRequirementHasAssetType rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-Asset-a1"/>
+        <ontocarmen1:securityRequirementHasAssetType rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-Asset-a2"/>
         <ontocarmen1:securityRequirementHasSecurityFeature rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-SecurityFeature-sf1"/>
         <ontocarmen1:securityRequirementHasSecurityFeature rdf:resource="https://gsya.esi.uclm.es/ontocarmen#SR3-SecurityFeature-sf2"/>
         <ontocarmen1:typeRelationship>auditGuaranteed</ontocarmen1:typeRelationship>
@@ -2567,10 +2567,10 @@
     
 
 
-    <!-- https://gsya.esi.uclm.es/ontocarmen/SR1-AssetType-at -->
+    <!-- https://gsya.esi.uclm.es/ontocarmen/SR1-Asset-a -->
 
-    <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen/SR1-AssetType-at">
-        <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/AssetType"/>
+    <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen/SR1-Asset-a">
+        <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/Asset"/>
         <ontocarmen1:assetTypeHasDevice rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-Controller-ard"/>
         <ontocarmen1:assetTypeHasDevice rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-Sensor-temp"/>
         <ontocarmen1:assetTypeHasInfrastructure rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-Network-net"/>
@@ -2652,7 +2652,7 @@
         <ontocarmen1:securityFeatureHasSecurityConstraint rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-Channel-ch"/>
         <ontocarmen1:securityFeatureHasSecurityConstraint rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-Cipher-c"/>
         <ontocarmen1:securityFeatureHasSecurityLevel rdf:resource="https://gsya.esi.uclm.es/ontocarmen/HighSecurityLevel"/>
-        <ontocarmen1:securityRequirementHasAssetType rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-AssetType-at"/>
+        <ontocarmen1:securityRequirementHasAssetType rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-Asset-a"/>
     </NamedIndividual>
     
 
@@ -2661,7 +2661,7 @@
 
     <NamedIndividual rdf:about="https://gsya.esi.uclm.es/ontocarmen/SR1-SecurityRequirement">
         <rdf:type rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SecurityRequirement"/>
-        <ontocarmen1:securityRequirementHasAssetType rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-AssetType-at"/>
+        <ontocarmen1:securityRequirementHasAssetType rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-Asset-a"/>
         <ontocarmen1:securityRequirementHasSecurityFeature rdf:resource="https://gsya.esi.uclm.es/ontocarmen/SR1-SecurityFeature-sf"/>
         <ontocarmen1:typeRelationship>secureCommunication</ontocarmen1:typeRelationship>
     </NamedIndividual>

@@ -20,7 +20,7 @@
         <Class IRI="/AppAndService"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/AssetType"/>
+        <Class IRI="/Asset"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Certificate"/>
@@ -245,10 +245,10 @@
         <DataProperty IRI="/typeUser"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#SR2-AssetType-at1"/>
+        <NamedIndividual IRI="#SR2-Asset-a1"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#SR2-AssetType-at2"/>
+        <NamedIndividual IRI="#SR2-Asset-a2"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#SR2-Channel-ch"/>
@@ -299,10 +299,10 @@
         <NamedIndividual IRI="#SR3-Actuator-nut"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#SR3-AssetType-at1"/>
+        <NamedIndividual IRI="#SR3-Asset-a1"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#SR3-AssetType-at2"/>
+        <NamedIndividual IRI="#SR3-Asset-a2"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#SR3-Certificate-cert"/>
@@ -380,7 +380,7 @@
         <NamedIndividual IRI="/MediumSecurityLevel"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/SR1-AssetType-at"/>
+        <NamedIndividual IRI="/SR1-Asset-a"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="/SR1-Channel-ch"/>
@@ -534,7 +534,7 @@
         <Class IRI="/AppAndService"/>
         <ObjectExactCardinality cardinality="1">
             <ObjectProperty IRI="/securityRequirementHasAssetType"/>
-            <Class IRI="/AssetType"/>
+            <Class IRI="/Asset"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
@@ -545,7 +545,7 @@
         </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/AssetType"/>
+        <Class IRI="/Asset"/>
         <ObjectIntersectionOf>
             <ObjectMinCardinality cardinality="0">
                 <ObjectProperty IRI="/hasSustainabilityLabel"/>
@@ -558,49 +558,49 @@
         </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/AssetType"/>
+        <Class IRI="/Asset"/>
         <ObjectMinCardinality cardinality="0">
             <ObjectProperty IRI="/assetTypeHasAppAndService"/>
             <Class IRI="/AppAndService"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/AssetType"/>
+        <Class IRI="/Asset"/>
         <ObjectMinCardinality cardinality="0">
             <ObjectProperty IRI="/assetTypeHasAssetType"/>
-            <Class IRI="/AssetType"/>
+            <Class IRI="/Asset"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/AssetType"/>
+        <Class IRI="/Asset"/>
         <ObjectMinCardinality cardinality="0">
             <ObjectProperty IRI="/assetTypeHasDevice"/>
             <Class IRI="/Device"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/AssetType"/>
+        <Class IRI="/Asset"/>
         <ObjectMinCardinality cardinality="0">
             <ObjectProperty IRI="/assetTypeHasInformation"/>
             <Class IRI="/Information"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/AssetType"/>
+        <Class IRI="/Asset"/>
         <ObjectMinCardinality cardinality="0">
             <ObjectProperty IRI="/assetTypeHasInfrastructure"/>
             <Class IRI="/Infrastructure"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/AssetType"/>
+        <Class IRI="/Asset"/>
         <ObjectMinCardinality cardinality="0">
             <ObjectProperty IRI="/assetTypeHasPlatform"/>
             <Class IRI="/Platform"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/AssetType"/>
+        <Class IRI="/Asset"/>
         <ObjectMinCardinality cardinality="0">
             <ObjectProperty IRI="/assetTypeHasUser"/>
             <Class IRI="/User"/>
@@ -951,7 +951,7 @@
         <Class IRI="/SecurityRequirement"/>
         <ObjectMinCardinality cardinality="1">
             <ObjectProperty IRI="/securityRequirementHasAssetType"/>
-            <Class IRI="/AssetType"/>
+            <Class IRI="/Asset"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
@@ -1050,12 +1050,12 @@
         <Class IRI="/Service"/>
     </DisjointClasses>
     <ClassAssertion>
-        <Class IRI="/AssetType"/>
-        <NamedIndividual IRI="#SR2-AssetType-at1"/>
+        <Class IRI="/Asset"/>
+        <NamedIndividual IRI="#SR2-Asset-a1"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/AssetType"/>
-        <NamedIndividual IRI="#SR2-AssetType-at2"/>
+        <Class IRI="/Asset"/>
+        <NamedIndividual IRI="#SR2-Asset-a2"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="/Channel"/>
@@ -1122,12 +1122,12 @@
         <NamedIndividual IRI="#SR3-Actuator-nut"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/AssetType"/>
-        <NamedIndividual IRI="#SR3-AssetType-at1"/>
+        <Class IRI="/Asset"/>
+        <NamedIndividual IRI="#SR3-Asset-a1"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/AssetType"/>
-        <NamedIndividual IRI="#SR3-AssetType-at2"/>
+        <Class IRI="/Asset"/>
+        <NamedIndividual IRI="#SR3-Asset-a2"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="/Certificate"/>
@@ -1230,8 +1230,8 @@
         <NamedIndividual IRI="/MediumSecurityLevel"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/AssetType"/>
-        <NamedIndividual IRI="/SR1-AssetType-at"/>
+        <Class IRI="/Asset"/>
+        <NamedIndividual IRI="/SR1-Asset-a"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="/Channel"/>
@@ -1279,42 +1279,42 @@
     </ClassAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="/assetTypeHasDevice"/>
-        <NamedIndividual IRI="#SR2-AssetType-at1"/>
+        <NamedIndividual IRI="#SR2-Asset-a1"/>
         <NamedIndividual IRI="#SR2-Controller-ard"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="/assetTypeHasDevice"/>
-        <NamedIndividual IRI="#SR2-AssetType-at1"/>
+        <NamedIndividual IRI="#SR2-Asset-a1"/>
         <NamedIndividual IRI="#SR2-Sensor-hum"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="/assetTypeHasDevice"/>
-        <NamedIndividual IRI="#SR2-AssetType-at1"/>
+        <NamedIndividual IRI="#SR2-Asset-a1"/>
         <NamedIndividual IRI="#SR2-Sensor-light"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="/assetTypeHasDevice"/>
-        <NamedIndividual IRI="#SR2-AssetType-at1"/>
+        <NamedIndividual IRI="#SR2-Asset-a1"/>
         <NamedIndividual IRI="#SR2-Sensor-temp"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="/assetTypeHasInfrastructure"/>
-        <NamedIndividual IRI="#SR2-AssetType-at1"/>
+        <NamedIndividual IRI="#SR2-Asset-a1"/>
         <NamedIndividual IRI="#SR2-Network-net"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="/assetTypeHasInfrastructure"/>
-        <NamedIndividual IRI="#SR2-AssetType-at1"/>
+        <NamedIndividual IRI="#SR2-Asset-a1"/>
         <NamedIndividual IRI="#SR2-Protocol-prot"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="/assetTypeHasInformation"/>
-        <NamedIndividual IRI="#SR2-AssetType-at2"/>
+        <NamedIndividual IRI="#SR2-Asset-a2"/>
         <NamedIndividual IRI="#SR2-Database-db"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="/assetTypeHasInformation"/>
-        <NamedIndividual IRI="#SR2-AssetType-at2"/>
+        <NamedIndividual IRI="#SR2-Asset-a2"/>
         <NamedIndividual IRI="#SR2-Datastore-ds"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
@@ -1360,12 +1360,12 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="/securityRequirementHasAssetType"/>
         <NamedIndividual IRI="#SR2-SecurityRequirement"/>
-        <NamedIndividual IRI="#SR2-AssetType-at1"/>
+        <NamedIndividual IRI="#SR2-Asset-a1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="/securityRequirementHasAssetType"/>
         <NamedIndividual IRI="#SR2-SecurityRequirement"/>
-        <NamedIndividual IRI="#SR2-AssetType-at2"/>
+        <NamedIndividual IRI="#SR2-Asset-a2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="/securityRequirementHasSecurityFeature"/>
@@ -1379,37 +1379,37 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="/assetTypeHasDevice"/>
-        <NamedIndividual IRI="#SR3-AssetType-at1"/>
+        <NamedIndividual IRI="#SR3-Asset-a1"/>
         <NamedIndividual IRI="#SR3-Actuator-nut"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="/assetTypeHasDevice"/>
-        <NamedIndividual IRI="#SR3-AssetType-at1"/>
+        <NamedIndividual IRI="#SR3-Asset-a1"/>
         <NamedIndividual IRI="#SR3-Controller-ard"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="/assetTypeHasInfrastructure"/>
-        <NamedIndividual IRI="#SR3-AssetType-at1"/>
+        <NamedIndividual IRI="#SR3-Asset-a1"/>
         <NamedIndividual IRI="#SR3-Network-net"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="/assetTypeHasInfrastructure"/>
-        <NamedIndividual IRI="#SR3-AssetType-at1"/>
+        <NamedIndividual IRI="#SR3-Asset-a1"/>
         <NamedIndividual IRI="#SR3-Protocol-prot"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="/assetTypeHasAssetType"/>
-        <NamedIndividual IRI="#SR3-AssetType-at2"/>
-        <NamedIndividual IRI="#SR3-AssetType-at1"/>
+        <NamedIndividual IRI="#SR3-Asset-a2"/>
+        <NamedIndividual IRI="#SR3-Asset-a1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="/assetTypeHasInfrastructure"/>
-        <NamedIndividual IRI="#SR3-AssetType-at2"/>
+        <NamedIndividual IRI="#SR3-Asset-a2"/>
         <NamedIndividual IRI="#SR3-Service-s"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="/assetTypeHasUser"/>
-        <NamedIndividual IRI="#SR3-AssetType-at2"/>
+        <NamedIndividual IRI="#SR3-Asset-a2"/>
         <NamedIndividual IRI="#SR3-User-user"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
@@ -1475,12 +1475,12 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="/securityRequirementHasAssetType"/>
         <NamedIndividual IRI="#SR3-SecurityRequirement"/>
-        <NamedIndividual IRI="#SR3-AssetType-at1"/>
+        <NamedIndividual IRI="#SR3-Asset-a1"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="/securityRequirementHasAssetType"/>
         <NamedIndividual IRI="#SR3-SecurityRequirement"/>
-        <NamedIndividual IRI="#SR3-AssetType-at2"/>
+        <NamedIndividual IRI="#SR3-Asset-a2"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="/securityRequirementHasSecurityFeature"/>
@@ -1554,22 +1554,22 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="/assetTypeHasDevice"/>
-        <NamedIndividual IRI="/SR1-AssetType-at"/>
+        <NamedIndividual IRI="/SR1-Asset-a"/>
         <NamedIndividual IRI="/SR1-Controller-ard"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="/assetTypeHasDevice"/>
-        <NamedIndividual IRI="/SR1-AssetType-at"/>
+        <NamedIndividual IRI="/SR1-Asset-a"/>
         <NamedIndividual IRI="/SR1-Sensor-temp"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="/assetTypeHasInfrastructure"/>
-        <NamedIndividual IRI="/SR1-AssetType-at"/>
+        <NamedIndividual IRI="/SR1-Asset-a"/>
         <NamedIndividual IRI="/SR1-Network-net"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="/assetTypeHasInfrastructure"/>
-        <NamedIndividual IRI="/SR1-AssetType-at"/>
+        <NamedIndividual IRI="/SR1-Asset-a"/>
         <NamedIndividual IRI="/SR1-Protocol-prot"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
@@ -1645,12 +1645,12 @@
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="/securityRequirementHasAssetType"/>
         <NamedIndividual IRI="/SR1-SecurityFeature-sf"/>
-        <NamedIndividual IRI="/SR1-AssetType-at"/>
+        <NamedIndividual IRI="/SR1-Asset-a"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="/securityRequirementHasAssetType"/>
         <NamedIndividual IRI="/SR1-SecurityRequirement"/>
-        <NamedIndividual IRI="/SR1-AssetType-at"/>
+        <NamedIndividual IRI="/SR1-Asset-a"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="/securityRequirementHasSecurityFeature"/>
@@ -1997,31 +1997,31 @@
     </IrreflexiveObjectProperty>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/assetTypeHasAppAndService"/>
-        <Class IRI="/AssetType"/>
+        <Class IRI="/Asset"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/assetTypeHasAssetType"/>
-        <Class IRI="/AssetType"/>
+        <Class IRI="/Asset"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/assetTypeHasDevice"/>
-        <Class IRI="/AssetType"/>
+        <Class IRI="/Asset"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/assetTypeHasInformation"/>
-        <Class IRI="/AssetType"/>
+        <Class IRI="/Asset"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/assetTypeHasInfrastructure"/>
-        <Class IRI="/AssetType"/>
+        <Class IRI="/Asset"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/assetTypeHasPlatform"/>
-        <Class IRI="/AssetType"/>
+        <Class IRI="/Asset"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/assetTypeHasUser"/>
-        <Class IRI="/AssetType"/>
+        <Class IRI="/Asset"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/deviceHasInfrastructure"/>
@@ -2093,7 +2093,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="/assetTypeHasAssetType"/>
-        <Class IRI="/AssetType"/>
+        <Class IRI="/Asset"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="/assetTypeHasDevice"/>
@@ -2173,7 +2173,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="/securityRequirementHasAssetType"/>
-        <Class IRI="/AssetType"/>
+        <Class IRI="/Asset"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="/securityRequirementHasSecurityFeature"/>

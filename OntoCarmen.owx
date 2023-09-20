@@ -19,7 +19,7 @@
         <Class IRI="/AppAndService"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/AssetType"/>
+        <Class IRI="/Asset"/>
     </Declaration>
     <Declaration>
         <Class IRI="/Certificate"/>
@@ -398,7 +398,7 @@
         <Class IRI="/AppAndService"/>
         <ObjectExactCardinality cardinality="1">
             <ObjectProperty IRI="/securityRequirementHasAssetType"/>
-            <Class IRI="/AssetType"/>
+            <Class IRI="/Asset"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
@@ -409,7 +409,7 @@
         </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/AssetType"/>
+        <Class IRI="/Asset"/>
         <ObjectIntersectionOf>
             <ObjectMinCardinality cardinality="0">
                 <ObjectProperty IRI="/hasSustainabilityLabel"/>
@@ -422,49 +422,49 @@
         </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/AssetType"/>
+        <Class IRI="/Asset"/>
         <ObjectMinCardinality cardinality="0">
             <ObjectProperty IRI="/assetTypeHasAppAndService"/>
             <Class IRI="/AppAndService"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/AssetType"/>
+        <Class IRI="/Asset"/>
         <ObjectMinCardinality cardinality="0">
             <ObjectProperty IRI="/assetTypeHasAssetType"/>
-            <Class IRI="/AssetType"/>
+            <Class IRI="/Asset"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/AssetType"/>
+        <Class IRI="/Asset"/>
         <ObjectMinCardinality cardinality="0">
             <ObjectProperty IRI="/assetTypeHasDevice"/>
             <Class IRI="/Device"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/AssetType"/>
+        <Class IRI="/Asset"/>
         <ObjectMinCardinality cardinality="0">
             <ObjectProperty IRI="/assetTypeHasInformation"/>
             <Class IRI="/Information"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/AssetType"/>
+        <Class IRI="/Asset"/>
         <ObjectMinCardinality cardinality="0">
             <ObjectProperty IRI="/assetTypeHasInfrastructure"/>
             <Class IRI="/Infrastructure"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/AssetType"/>
+        <Class IRI="/Asset"/>
         <ObjectMinCardinality cardinality="0">
             <ObjectProperty IRI="/assetTypeHasPlatform"/>
             <Class IRI="/Platform"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="/AssetType"/>
+        <Class IRI="/Asset"/>
         <ObjectMinCardinality cardinality="0">
             <ObjectProperty IRI="/assetTypeHasUser"/>
             <Class IRI="/User"/>
@@ -815,7 +815,7 @@
         <Class IRI="/SecurityRequirement"/>
         <ObjectMinCardinality cardinality="1">
             <ObjectProperty IRI="/securityRequirementHasAssetType"/>
-            <Class IRI="/AssetType"/>
+            <Class IRI="/Asset"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
@@ -1146,31 +1146,31 @@
     </IrreflexiveObjectProperty>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/assetTypeHasAppAndService"/>
-        <Class IRI="/AssetType"/>
+        <Class IRI="/Asset"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/assetTypeHasAssetType"/>
-        <Class IRI="/AssetType"/>
+        <Class IRI="/Asset"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/assetTypeHasDevice"/>
-        <Class IRI="/AssetType"/>
+        <Class IRI="/Asset"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/assetTypeHasInformation"/>
-        <Class IRI="/AssetType"/>
+        <Class IRI="/Asset"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/assetTypeHasInfrastructure"/>
-        <Class IRI="/AssetType"/>
+        <Class IRI="/Asset"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/assetTypeHasPlatform"/>
-        <Class IRI="/AssetType"/>
+        <Class IRI="/Asset"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/assetTypeHasUser"/>
-        <Class IRI="/AssetType"/>
+        <Class IRI="/Asset"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/deviceHasInfrastructure"/>
@@ -1242,7 +1242,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="/assetTypeHasAssetType"/>
-        <Class IRI="/AssetType"/>
+        <Class IRI="/Asset"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="/assetTypeHasDevice"/>
@@ -1322,7 +1322,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="/securityRequirementHasAssetType"/>
-        <Class IRI="/AssetType"/>
+        <Class IRI="/Asset"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="/securityRequirementHasSecurityFeature"/>
