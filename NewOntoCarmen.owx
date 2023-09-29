@@ -1,0 +1,2264 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://gsya.esi.uclm.es/ontocarmen"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://gsya.esi.uclm.es/ontocarmen">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="ontocarmen" IRI="https://gsya.esi.uclm.es/ontocarmen#"/>
+    <Declaration>
+        <Class IRI="/Actuator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/AppAndService"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Asset"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Certificate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Channel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Cipher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Controller"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Database"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Datastore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Device"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Ecosystem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Firewall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Hardware"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Information"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Infrastructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Network"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Password"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Platform"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Property"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Protocol"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/SecureHashing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/SecurityConstraint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/SecurityDevice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/SecurityFeature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/SecurityLevel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/SecurityRequirement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Sensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Service"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/Signature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/SustainabilityLabel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="/User"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSustainabilityLabel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasAppAndService"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasAsset"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasDevice"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasInformation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasInfrastructure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasPlatform"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasSecurityConstraint"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasSecurityFeature"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasSecurityLevel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasUser"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isLessSecureThan"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isLessSustainabilityThan"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isMoreSecureThan"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/isMoreSustainabilityThan"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/condition"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/typeActuator"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/typeAppAndService"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/typeCertificate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/typeChannel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/typeCipher"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/typeController"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/typeDatabase"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/typeDatastore"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/typeEcosystem"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/typeFirewall"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/typeHardware"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/typeNetwork"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/typePassword"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/typePlatform"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/typeProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/typeProtocol"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/typeRelationship"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/typeSecureHashing"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/typeSensor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/typeService"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/typeSignature"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="/typeUser"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SR2-Asset-a1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SR2-Asset-a2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SR2-Channel-ch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SR2-Cipher-c"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SR2-Controller-ard"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SR2-Database-db"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SR2-Datastore-ds"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SR2-Network-net"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SR2-Property-p1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SR2-Property-p2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SR2-Protocol-prot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SR2-SecurityFeature-sf1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SR2-SecurityFeature-sf2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SR2-SecurityRequirement"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SR2-Sensor-hum"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SR2-Sensor-light"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SR2-Sensor-temp"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SR3-Actuator-nut"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SR3-Asset-a1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SR3-Asset-a2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SR3-Certificate-cert"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SR3-Channel-ch2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SR3-Cipher-c"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SR3-Controller-ard"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SR3-Network-net"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SR3-Property-p1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SR3-Property-p2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SR3-Property-p3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SR3-Property-p4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SR3-Protocol-prot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SR3-SecurityFeature-sf1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SR3-SecurityFeature-sf2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SR3-SecurityRequirement"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SR3-Service-s"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SR3-User-user"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/ASustainabilityLabel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/BSustainabilityLabel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/CSustainabilityLabel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/DSustainabilityLabel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/ESustainabilityLabel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/FSustainabilityLabel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/GSustainabilityLabel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/HighSecurityLevel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/LowSecurityLevel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/MediumSecurityLevel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/SR1-Asset-a"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/SR1-Channel-ch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/SR1-Cipher-c"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/SR1-Controller-ard"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/SR1-Network-net"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/SR1-Property-p"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/SR1-Protocol-prot"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/SR1-SecurityFeature-sf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/SR1-SecurityRequirement"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/SR1-Sensor-temp"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/VeryHighSecurityLevel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="/VeryLowSecurityLevel"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    </Declaration>
+    <Declaration>
+        <Datatype IRI="/ActuatorType"/>
+    </Declaration>
+    <Declaration>
+        <Datatype IRI="/AppType"/>
+    </Declaration>
+    <Declaration>
+        <Datatype IRI="/CertificateType"/>
+    </Declaration>
+    <Declaration>
+        <Datatype IRI="/ChannelType"/>
+    </Declaration>
+    <Declaration>
+        <Datatype IRI="/CipherType"/>
+    </Declaration>
+    <Declaration>
+        <Datatype IRI="/ControllerType"/>
+    </Declaration>
+    <Declaration>
+        <Datatype IRI="/DatabaseType"/>
+    </Declaration>
+    <Declaration>
+        <Datatype IRI="/DatastoreType"/>
+    </Declaration>
+    <Declaration>
+        <Datatype IRI="/EcosystemType"/>
+    </Declaration>
+    <Declaration>
+        <Datatype IRI="/FirewallType"/>
+    </Declaration>
+    <Declaration>
+        <Datatype IRI="/HardwareType"/>
+    </Declaration>
+    <Declaration>
+        <Datatype IRI="/HashingType"/>
+    </Declaration>
+    <Declaration>
+        <Datatype IRI="/NetworkType"/>
+    </Declaration>
+    <Declaration>
+        <Datatype IRI="/PasswordType"/>
+    </Declaration>
+    <Declaration>
+        <Datatype IRI="/PlatformType"/>
+    </Declaration>
+    <Declaration>
+        <Datatype IRI="/PropertyType"/>
+    </Declaration>
+    <Declaration>
+        <Datatype IRI="/ProtocolType"/>
+    </Declaration>
+    <Declaration>
+        <Datatype IRI="/RelationshipType"/>
+    </Declaration>
+    <Declaration>
+        <Datatype IRI="/SensorType"/>
+    </Declaration>
+    <Declaration>
+        <Datatype IRI="/ServiceType"/>
+    </Declaration>
+    <Declaration>
+        <Datatype IRI="/SignatureType"/>
+    </Declaration>
+    <Declaration>
+        <Datatype IRI="/UserType"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="/SecurityLevel"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="/HighSecurityLevel"/>
+            <NamedIndividual IRI="/LowSecurityLevel"/>
+            <NamedIndividual IRI="/MediumSecurityLevel"/>
+            <NamedIndividual IRI="/VeryHighSecurityLevel"/>
+            <NamedIndividual IRI="/VeryLowSecurityLevel"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="/SustainabilityLabel"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="/ASustainabilityLabel"/>
+            <NamedIndividual IRI="/BSustainabilityLabel"/>
+            <NamedIndividual IRI="/CSustainabilityLabel"/>
+            <NamedIndividual IRI="/DSustainabilityLabel"/>
+            <NamedIndividual IRI="/ESustainabilityLabel"/>
+            <NamedIndividual IRI="/FSustainabilityLabel"/>
+            <NamedIndividual IRI="/GSustainabilityLabel"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="/Actuator"/>
+        <Class IRI="/Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Actuator"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/typeActuator"/>
+            <Datatype IRI="/ActuatorType"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/AppAndService"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/hasAsset"/>
+            <Class IRI="/Asset"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/AppAndService"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/typeAppAndService"/>
+            <Datatype IRI="/AppType"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Asset"/>
+        <ObjectMinCardinality cardinality="0">
+            <ObjectProperty IRI="/hasAppAndService"/>
+            <Class IRI="/AppAndService"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Asset"/>
+        <ObjectMinCardinality cardinality="0">
+            <ObjectProperty IRI="/hasDevice"/>
+            <Class IRI="/Device"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Asset"/>
+        <ObjectMinCardinality cardinality="0">
+            <ObjectProperty IRI="/hasInformation"/>
+            <Class IRI="/Information"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Asset"/>
+        <ObjectMinCardinality cardinality="0">
+            <ObjectProperty IRI="/hasInfrastructure"/>
+            <Class IRI="/Infrastructure"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Asset"/>
+        <ObjectMinCardinality cardinality="0">
+            <ObjectProperty IRI="/hasPlatform"/>
+            <Class IRI="/Platform"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Asset"/>
+        <ObjectMinCardinality cardinality="0">
+            <ObjectProperty IRI="/hasUser"/>
+            <Class IRI="/User"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Certificate"/>
+        <Class IRI="/SecurityConstraint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Certificate"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/typeCertificate"/>
+            <Datatype IRI="/CertificateType"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Channel"/>
+        <Class IRI="/SecurityConstraint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Channel"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/typeChannel"/>
+            <Datatype IRI="/ChannelType"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Cipher"/>
+        <Class IRI="/SecurityConstraint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Cipher"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/typeCipher"/>
+            <Datatype IRI="/CipherType"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Controller"/>
+        <Class IRI="/Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Controller"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/typeController"/>
+            <Datatype IRI="/ControllerType"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Database"/>
+        <Class IRI="/Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Database"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/typeDatabase"/>
+            <Datatype IRI="/DatabaseType"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Datastore"/>
+        <Class IRI="/Information"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Datastore"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/typeDatastore"/>
+            <Datatype IRI="/DatastoreType"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Ecosystem"/>
+        <Class IRI="/Infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Ecosystem"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/typeEcosystem"/>
+            <Datatype IRI="/EcosystemType"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Firewall"/>
+        <Class IRI="/SecurityDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Firewall"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/typeFirewall"/>
+            <Datatype IRI="/FirewallType"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Hardware"/>
+        <Class IRI="/Infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Hardware"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/typeHardware"/>
+            <Datatype IRI="/HardwareType"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Network"/>
+        <Class IRI="/SecurityDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Network"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/typeNetwork"/>
+            <Datatype IRI="/NetworkType"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Password"/>
+        <Class IRI="/SecurityConstraint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Password"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/typePassword"/>
+            <Datatype IRI="/PasswordType"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Platform"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/typePlatform"/>
+            <Datatype IRI="/PlatformType"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Property"/>
+        <ObjectMinCardinality cardinality="0">
+            <ObjectProperty IRI="/hasSecurityConstraint"/>
+            <Class IRI="/SecurityConstraint"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Property"/>
+        <DataMinCardinality cardinality="1">
+            <DataProperty IRI="/typeProperty"/>
+            <Datatype IRI="/PropertyType"/>
+        </DataMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Protocol"/>
+        <Class IRI="/SecurityDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Protocol"/>
+        <DataMinCardinality cardinality="1">
+            <DataProperty IRI="/typeProtocol"/>
+            <Datatype IRI="/ProtocolType"/>
+        </DataMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SecureHashing"/>
+        <Class IRI="/SecurityConstraint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SecureHashing"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/typeSecureHashing"/>
+            <Datatype IRI="/HashingType"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SecurityConstraint"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="/hasProperty"/>
+            <Class IRI="/Property"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SecurityDevice"/>
+        <Class IRI="/Infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SecurityFeature"/>
+        <ObjectIntersectionOf>
+            <DataMinCardinality cardinality="0">
+                <DataProperty IRI="/condition"/>
+                <Datatype abbreviatedIRI="xsd:string"/>
+            </DataMinCardinality>
+            <DataMaxCardinality cardinality="1">
+                <DataProperty IRI="/condition"/>
+                <Datatype abbreviatedIRI="xsd:string"/>
+            </DataMaxCardinality>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SecurityFeature"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="/hasSecurityLevel"/>
+            <Class IRI="/SecurityLevel"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SecurityRequirement"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="/hasAsset"/>
+            <Class IRI="/Asset"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SecurityRequirement"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="/hasSecurityFeature"/>
+            <Class IRI="/SecurityFeature"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SecurityRequirement"/>
+        <DataMinCardinality cardinality="1">
+            <DataProperty IRI="/typeRelationship"/>
+            <Datatype IRI="/RelationshipType"/>
+        </DataMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Sensor"/>
+        <Class IRI="/Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Sensor"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/typeSensor"/>
+            <Datatype IRI="/SensorType"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Service"/>
+        <Class IRI="/SecurityDevice"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Service"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/typeService"/>
+            <Datatype IRI="/ServiceType"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Signature"/>
+        <Class IRI="/SecurityConstraint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Signature"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/typeSignature"/>
+            <Datatype IRI="/SignatureType"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/User"/>
+        <DataExactCardinality cardinality="1">
+            <DataProperty IRI="/typeUser"/>
+            <Datatype IRI="/UserType"/>
+        </DataExactCardinality>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="/Actuator"/>
+        <Class IRI="/Controller"/>
+        <Class IRI="/Sensor"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Certificate"/>
+        <Class IRI="/Channel"/>
+        <Class IRI="/Cipher"/>
+        <Class IRI="/Password"/>
+        <Class IRI="/SecureHashing"/>
+        <Class IRI="/Signature"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Database"/>
+        <Class IRI="/Datastore"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Ecosystem"/>
+        <Class IRI="/Hardware"/>
+        <Class IRI="/SecurityDevice"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="/Firewall"/>
+        <Class IRI="/Network"/>
+        <Class IRI="/Protocol"/>
+        <Class IRI="/Service"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="/Asset"/>
+        <NamedIndividual IRI="#SR2-Asset-a1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Asset"/>
+        <NamedIndividual IRI="#SR2-Asset-a2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Channel"/>
+        <NamedIndividual IRI="#SR2-Channel-ch"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Cipher"/>
+        <NamedIndividual IRI="#SR2-Cipher-c"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Controller"/>
+        <NamedIndividual IRI="#SR2-Controller-ard"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Database"/>
+        <NamedIndividual IRI="#SR2-Database-db"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Datastore"/>
+        <NamedIndividual IRI="#SR2-Datastore-ds"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Network"/>
+        <NamedIndividual IRI="#SR2-Network-net"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Property"/>
+        <NamedIndividual IRI="#SR2-Property-p1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Property"/>
+        <NamedIndividual IRI="#SR2-Property-p2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Protocol"/>
+        <NamedIndividual IRI="#SR2-Protocol-prot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/SecurityFeature"/>
+        <NamedIndividual IRI="#SR2-SecurityFeature-sf1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/SecurityFeature"/>
+        <NamedIndividual IRI="#SR2-SecurityFeature-sf2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/SecurityRequirement"/>
+        <NamedIndividual IRI="#SR2-SecurityRequirement"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Sensor"/>
+        <NamedIndividual IRI="#SR2-Sensor-hum"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Sensor"/>
+        <NamedIndividual IRI="#SR2-Sensor-light"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Sensor"/>
+        <NamedIndividual IRI="#SR2-Sensor-temp"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Actuator"/>
+        <NamedIndividual IRI="#SR3-Actuator-nut"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Asset"/>
+        <NamedIndividual IRI="#SR3-Asset-a1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Asset"/>
+        <NamedIndividual IRI="#SR3-Asset-a2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Certificate"/>
+        <NamedIndividual IRI="#SR3-Certificate-cert"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Channel"/>
+        <NamedIndividual IRI="#SR3-Channel-ch2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Cipher"/>
+        <NamedIndividual IRI="#SR3-Cipher-c"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Controller"/>
+        <NamedIndividual IRI="#SR3-Controller-ard"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Network"/>
+        <NamedIndividual IRI="#SR3-Network-net"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Property"/>
+        <NamedIndividual IRI="#SR3-Property-p1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Property"/>
+        <NamedIndividual IRI="#SR3-Property-p2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Property"/>
+        <NamedIndividual IRI="#SR3-Property-p3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Property"/>
+        <NamedIndividual IRI="#SR3-Property-p4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Protocol"/>
+        <NamedIndividual IRI="#SR3-Protocol-prot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/SecurityFeature"/>
+        <NamedIndividual IRI="#SR3-SecurityFeature-sf1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/SecurityFeature"/>
+        <NamedIndividual IRI="#SR3-SecurityFeature-sf2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/SecurityRequirement"/>
+        <NamedIndividual IRI="#SR3-SecurityRequirement"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Service"/>
+        <NamedIndividual IRI="#SR3-Service-s"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/User"/>
+        <NamedIndividual IRI="#SR3-User-user"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/SustainabilityLabel"/>
+        <NamedIndividual IRI="/ASustainabilityLabel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/SustainabilityLabel"/>
+        <NamedIndividual IRI="/BSustainabilityLabel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/SustainabilityLabel"/>
+        <NamedIndividual IRI="/CSustainabilityLabel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/SustainabilityLabel"/>
+        <NamedIndividual IRI="/DSustainabilityLabel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/SustainabilityLabel"/>
+        <NamedIndividual IRI="/ESustainabilityLabel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/SustainabilityLabel"/>
+        <NamedIndividual IRI="/FSustainabilityLabel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/SustainabilityLabel"/>
+        <NamedIndividual IRI="/GSustainabilityLabel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/SecurityLevel"/>
+        <NamedIndividual IRI="/HighSecurityLevel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/SecurityLevel"/>
+        <NamedIndividual IRI="/LowSecurityLevel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/SecurityLevel"/>
+        <NamedIndividual IRI="/MediumSecurityLevel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Asset"/>
+        <NamedIndividual IRI="/SR1-Asset-a"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Channel"/>
+        <NamedIndividual IRI="/SR1-Channel-ch"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Cipher"/>
+        <NamedIndividual IRI="/SR1-Cipher-c"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Controller"/>
+        <NamedIndividual IRI="/SR1-Controller-ard"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Network"/>
+        <NamedIndividual IRI="/SR1-Network-net"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Property"/>
+        <NamedIndividual IRI="/SR1-Property-p"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Protocol"/>
+        <NamedIndividual IRI="/SR1-Protocol-prot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/SecurityFeature"/>
+        <NamedIndividual IRI="/SR1-SecurityFeature-sf"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/SecurityRequirement"/>
+        <NamedIndividual IRI="/SR1-SecurityRequirement"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/Sensor"/>
+        <NamedIndividual IRI="/SR1-Sensor-temp"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/SecurityLevel"/>
+        <NamedIndividual IRI="/VeryHighSecurityLevel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="/SecurityLevel"/>
+        <NamedIndividual IRI="/VeryLowSecurityLevel"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasDevice"/>
+        <NamedIndividual IRI="#SR2-Asset-a1"/>
+        <NamedIndividual IRI="#SR2-Controller-ard"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasDevice"/>
+        <NamedIndividual IRI="#SR2-Asset-a1"/>
+        <NamedIndividual IRI="#SR2-Sensor-hum"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasDevice"/>
+        <NamedIndividual IRI="#SR2-Asset-a1"/>
+        <NamedIndividual IRI="#SR2-Sensor-light"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasDevice"/>
+        <NamedIndividual IRI="#SR2-Asset-a1"/>
+        <NamedIndividual IRI="#SR2-Sensor-temp"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasInfrastructure"/>
+        <NamedIndividual IRI="#SR2-Asset-a1"/>
+        <NamedIndividual IRI="#SR2-Network-net"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasInfrastructure"/>
+        <NamedIndividual IRI="#SR2-Asset-a1"/>
+        <NamedIndividual IRI="#SR2-Protocol-prot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasInformation"/>
+        <NamedIndividual IRI="#SR2-Asset-a2"/>
+        <NamedIndividual IRI="#SR2-Database-db"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasInformation"/>
+        <NamedIndividual IRI="#SR2-Asset-a2"/>
+        <NamedIndividual IRI="#SR2-Datastore-ds"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasSecurityConstraint"/>
+        <NamedIndividual IRI="#SR2-Property-p1"/>
+        <NamedIndividual IRI="#SR2-Cipher-c"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasSecurityConstraint"/>
+        <NamedIndividual IRI="#SR2-Property-p2"/>
+        <NamedIndividual IRI="#SR2-Channel-ch"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasSecurityLevel"/>
+        <NamedIndividual IRI="#SR2-SecurityFeature-sf1"/>
+        <NamedIndividual IRI="/VeryHighSecurityLevel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasSecurityLevel"/>
+        <NamedIndividual IRI="#SR2-SecurityFeature-sf2"/>
+        <NamedIndividual IRI="/HighSecurityLevel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasAsset"/>
+        <NamedIndividual IRI="#SR2-SecurityRequirement"/>
+        <NamedIndividual IRI="#SR2-Asset-a1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasAsset"/>
+        <NamedIndividual IRI="#SR2-SecurityRequirement"/>
+        <NamedIndividual IRI="#SR2-Asset-a2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasSecurityFeature"/>
+        <NamedIndividual IRI="#SR2-SecurityRequirement"/>
+        <NamedIndividual IRI="#SR2-SecurityFeature-sf1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasSecurityFeature"/>
+        <NamedIndividual IRI="#SR2-SecurityRequirement"/>
+        <NamedIndividual IRI="#SR2-SecurityFeature-sf2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasDevice"/>
+        <NamedIndividual IRI="#SR3-Asset-a1"/>
+        <NamedIndividual IRI="#SR3-Actuator-nut"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasDevice"/>
+        <NamedIndividual IRI="#SR3-Asset-a1"/>
+        <NamedIndividual IRI="#SR3-Controller-ard"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasInfrastructure"/>
+        <NamedIndividual IRI="#SR3-Asset-a1"/>
+        <NamedIndividual IRI="#SR3-Network-net"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasInfrastructure"/>
+        <NamedIndividual IRI="#SR3-Asset-a1"/>
+        <NamedIndividual IRI="#SR3-Protocol-prot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasInfrastructure"/>
+        <NamedIndividual IRI="#SR3-Asset-a2"/>
+        <NamedIndividual IRI="#SR3-Service-s"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasUser"/>
+        <NamedIndividual IRI="#SR3-Asset-a2"/>
+        <NamedIndividual IRI="#SR3-User-user"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasSecurityConstraint"/>
+        <NamedIndividual IRI="#SR3-Property-p1"/>
+        <NamedIndividual IRI="#SR3-Certificate-cert"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasSecurityConstraint"/>
+        <NamedIndividual IRI="#SR3-Property-p2"/>
+        <NamedIndividual IRI="#SR3-Cipher-c"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasSecurityConstraint"/>
+        <NamedIndividual IRI="#SR3-Property-p3"/>
+        <NamedIndividual IRI="#SR3-Channel-ch2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasSecurityLevel"/>
+        <NamedIndividual IRI="#SR3-SecurityFeature-sf1"/>
+        <NamedIndividual IRI="/VeryHighSecurityLevel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasSecurityLevel"/>
+        <NamedIndividual IRI="#SR3-SecurityFeature-sf2"/>
+        <NamedIndividual IRI="/HighSecurityLevel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasAsset"/>
+        <NamedIndividual IRI="#SR3-SecurityRequirement"/>
+        <NamedIndividual IRI="#SR3-Asset-a1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasAsset"/>
+        <NamedIndividual IRI="#SR3-SecurityRequirement"/>
+        <NamedIndividual IRI="#SR3-Asset-a2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasSecurityFeature"/>
+        <NamedIndividual IRI="#SR3-SecurityRequirement"/>
+        <NamedIndividual IRI="#SR3-SecurityFeature-sf1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasSecurityFeature"/>
+        <NamedIndividual IRI="#SR3-SecurityRequirement"/>
+        <NamedIndividual IRI="#SR3-SecurityFeature-sf2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/isMoreSustainabilityThan"/>
+        <NamedIndividual IRI="/ASustainabilityLabel"/>
+        <NamedIndividual IRI="/BSustainabilityLabel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/isMoreSustainabilityThan"/>
+        <NamedIndividual IRI="/BSustainabilityLabel"/>
+        <NamedIndividual IRI="/CSustainabilityLabel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/isMoreSustainabilityThan"/>
+        <NamedIndividual IRI="/CSustainabilityLabel"/>
+        <NamedIndividual IRI="/DSustainabilityLabel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/isMoreSustainabilityThan"/>
+        <NamedIndividual IRI="/DSustainabilityLabel"/>
+        <NamedIndividual IRI="/ESustainabilityLabel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/isMoreSustainabilityThan"/>
+        <NamedIndividual IRI="/ESustainabilityLabel"/>
+        <NamedIndividual IRI="/FSustainabilityLabel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/isMoreSustainabilityThan"/>
+        <NamedIndividual IRI="/FSustainabilityLabel"/>
+        <NamedIndividual IRI="/GSustainabilityLabel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/isLessSecureThan"/>
+        <NamedIndividual IRI="/HighSecurityLevel"/>
+        <NamedIndividual IRI="/VeryHighSecurityLevel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/isMoreSecureThan"/>
+        <NamedIndividual IRI="/HighSecurityLevel"/>
+        <NamedIndividual IRI="/MediumSecurityLevel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/isLessSecureThan"/>
+        <NamedIndividual IRI="/LowSecurityLevel"/>
+        <NamedIndividual IRI="/MediumSecurityLevel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/isMoreSecureThan"/>
+        <NamedIndividual IRI="/LowSecurityLevel"/>
+        <NamedIndividual IRI="/VeryLowSecurityLevel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/isLessSecureThan"/>
+        <NamedIndividual IRI="/MediumSecurityLevel"/>
+        <NamedIndividual IRI="/HighSecurityLevel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/isMoreSecureThan"/>
+        <NamedIndividual IRI="/MediumSecurityLevel"/>
+        <NamedIndividual IRI="/LowSecurityLevel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasDevice"/>
+        <NamedIndividual IRI="/SR1-Asset-a"/>
+        <NamedIndividual IRI="/SR1-Controller-ard"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasDevice"/>
+        <NamedIndividual IRI="/SR1-Asset-a"/>
+        <NamedIndividual IRI="/SR1-Sensor-temp"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasInfrastructure"/>
+        <NamedIndividual IRI="/SR1-Asset-a"/>
+        <NamedIndividual IRI="/SR1-Network-net"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasInfrastructure"/>
+        <NamedIndividual IRI="/SR1-Asset-a"/>
+        <NamedIndividual IRI="/SR1-Protocol-prot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasProperty"/>
+        <NamedIndividual IRI="/SR1-Channel-ch"/>
+        <NamedIndividual IRI="/SR1-Property-p"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasProperty"/>
+        <NamedIndividual IRI="/SR1-Cipher-c"/>
+        <NamedIndividual IRI="/SR1-Property-p"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasSecurityConstraint"/>
+        <NamedIndividual IRI="/SR1-Property-p"/>
+        <NamedIndividual IRI="/SR1-Channel-ch"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasSecurityConstraint"/>
+        <NamedIndividual IRI="/SR1-Property-p"/>
+        <NamedIndividual IRI="/SR1-Cipher-c"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasAsset"/>
+        <NamedIndividual IRI="/SR1-SecurityFeature-sf"/>
+        <NamedIndividual IRI="/SR1-Asset-a"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasSecurityLevel"/>
+        <NamedIndividual IRI="/SR1-SecurityFeature-sf"/>
+        <NamedIndividual IRI="/HighSecurityLevel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasAsset"/>
+        <NamedIndividual IRI="/SR1-SecurityRequirement"/>
+        <NamedIndividual IRI="/SR1-Asset-a"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasSecurityFeature"/>
+        <NamedIndividual IRI="/SR1-SecurityRequirement"/>
+        <NamedIndividual IRI="/SR1-SecurityFeature-sf"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/isMoreSecureThan"/>
+        <NamedIndividual IRI="/VeryHighSecurityLevel"/>
+        <NamedIndividual IRI="/HighSecurityLevel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/isLessSecureThan"/>
+        <NamedIndividual IRI="/VeryLowSecurityLevel"/>
+        <NamedIndividual IRI="/LowSecurityLevel"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeChannel"/>
+        <NamedIndividual IRI="#SR2-Channel-ch"/>
+        <Literal>HTTPS</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeCipher"/>
+        <NamedIndividual IRI="#SR2-Cipher-c"/>
+        <Literal>AES128GCM</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeController"/>
+        <NamedIndividual IRI="#SR2-Controller-ard"/>
+        <Literal>microController</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeDatabase"/>
+        <NamedIndividual IRI="#SR2-Database-db"/>
+        <Literal>NoSQL</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeDatastore"/>
+        <NamedIndividual IRI="#SR2-Datastore-ds"/>
+        <Literal>HDFS</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeNetwork"/>
+        <NamedIndividual IRI="#SR2-Network-net"/>
+        <Literal>WLAN</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeProperty"/>
+        <NamedIndividual IRI="#SR2-Property-p1"/>
+        <Literal>integrity</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeProperty"/>
+        <NamedIndividual IRI="#SR2-Property-p2"/>
+        <Literal>confidentiality</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeProtocol"/>
+        <NamedIndividual IRI="#SR2-Protocol-prot"/>
+        <Literal>BLE</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeRelationship"/>
+        <NamedIndividual IRI="#SR2-SecurityRequirement"/>
+        <Literal>encryptedInformation</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeRelationship"/>
+        <NamedIndividual IRI="#SR2-SecurityRequirement"/>
+        <Literal>secureCommunication</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeSensor"/>
+        <NamedIndividual IRI="#SR2-Sensor-hum"/>
+        <Literal>humidity</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeSensor"/>
+        <NamedIndividual IRI="#SR2-Sensor-light"/>
+        <Literal>luminosity</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeSensor"/>
+        <NamedIndividual IRI="#SR2-Sensor-temp"/>
+        <Literal>temperature</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeActuator"/>
+        <NamedIndividual IRI="#SR3-Actuator-nut"/>
+        <Literal>electric</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeCertificate"/>
+        <NamedIndividual IRI="#SR3-Certificate-cert"/>
+        <Literal>x509</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeChannel"/>
+        <NamedIndividual IRI="#SR3-Channel-ch2"/>
+        <Literal>HTTPS</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeCipher"/>
+        <NamedIndividual IRI="#SR3-Cipher-c"/>
+        <Literal>AES128GCM</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeController"/>
+        <NamedIndividual IRI="#SR3-Controller-ard"/>
+        <Literal>microController</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeNetwork"/>
+        <NamedIndividual IRI="#SR3-Network-net"/>
+        <Literal>WLAN</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeProperty"/>
+        <NamedIndividual IRI="#SR3-Property-p1"/>
+        <Literal>authentication</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeProperty"/>
+        <NamedIndividual IRI="#SR3-Property-p1"/>
+        <Literal>authorisation</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeProperty"/>
+        <NamedIndividual IRI="#SR3-Property-p2"/>
+        <Literal>integrity</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeProperty"/>
+        <NamedIndividual IRI="#SR3-Property-p3"/>
+        <Literal>confidentiality</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeProperty"/>
+        <NamedIndividual IRI="#SR3-Property-p4"/>
+        <Literal>audit</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeProtocol"/>
+        <NamedIndividual IRI="#SR3-Protocol-prot"/>
+        <Literal>Wifi</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/condition"/>
+        <NamedIndividual IRI="#SR3-SecurityFeature-sf2"/>
+        <Literal>user isAuthenticated &amp; isAuthorised</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeRelationship"/>
+        <NamedIndividual IRI="#SR3-SecurityRequirement"/>
+        <Literal>auditGuaranteed</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeRelationship"/>
+        <NamedIndividual IRI="#SR3-SecurityRequirement"/>
+        <Literal>authenticatedUser</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeRelationship"/>
+        <NamedIndividual IRI="#SR3-SecurityRequirement"/>
+        <Literal>secureCommunication</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeService"/>
+        <NamedIndividual IRI="#SR3-Service-s"/>
+        <Literal>authenticationSystem</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeUser"/>
+        <NamedIndividual IRI="#SR3-User-user"/>
+        <Literal>consumer</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeChannel"/>
+        <NamedIndividual IRI="/SR1-Channel-ch"/>
+        <Literal>HTTPS</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeCipher"/>
+        <NamedIndividual IRI="/SR1-Cipher-c"/>
+        <Literal>Camellia</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeController"/>
+        <NamedIndividual IRI="/SR1-Controller-ard"/>
+        <Literal>microController</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeNetwork"/>
+        <NamedIndividual IRI="/SR1-Network-net"/>
+        <Literal>WLAN</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeProperty"/>
+        <NamedIndividual IRI="/SR1-Property-p"/>
+        <Literal>confidentiality</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeProtocol"/>
+        <NamedIndividual IRI="/SR1-Protocol-prot"/>
+        <Literal>BLE</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeProtocol"/>
+        <NamedIndividual IRI="/SR1-Protocol-prot"/>
+        <Literal>RFID</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeRelationship"/>
+        <NamedIndividual IRI="/SR1-SecurityRequirement"/>
+        <Literal>secureCommunication</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="/typeSensor"/>
+        <NamedIndividual IRI="/SR1-Sensor-temp"/>
+        <Literal>temperature</Literal>
+    </DataPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/hasProperty"/>
+        <ObjectProperty IRI="/hasSecurityConstraint"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/isLessSecureThan"/>
+        <ObjectProperty IRI="/isMoreSecureThan"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="/isLessSustainabilityThan"/>
+        <ObjectProperty IRI="/isMoreSustainabilityThan"/>
+    </InverseObjectProperties>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="/hasAppAndService"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="/hasDevice"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="/hasInformation"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="/hasInfrastructure"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="/hasPlatform"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="/hasUser"/>
+    </InverseFunctionalObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="/hasAppAndService"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="/hasAsset"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="/hasDevice"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="/hasInformation"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="/hasInfrastructure"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="/hasPlatform"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="/hasSecurityFeature"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="/hasUser"/>
+    </AsymmetricObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="/hasAppAndService"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="/hasAsset"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="/hasDevice"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="/hasInformation"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="/hasInfrastructure"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="/hasPlatform"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="/hasSecurityFeature"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="/hasUser"/>
+    </IrreflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSustainabilityLabel"/>
+        <Class IRI="/AppAndService"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSustainabilityLabel"/>
+        <Class IRI="/Asset"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSustainabilityLabel"/>
+        <Class IRI="/Certificate"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSustainabilityLabel"/>
+        <Class IRI="/Channel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSustainabilityLabel"/>
+        <Class IRI="/Cipher"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSustainabilityLabel"/>
+        <Class IRI="/Device"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSustainabilityLabel"/>
+        <Class IRI="/Information"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSustainabilityLabel"/>
+        <Class IRI="/Infrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSustainabilityLabel"/>
+        <Class IRI="/Password"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSustainabilityLabel"/>
+        <Class IRI="/Platform"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSustainabilityLabel"/>
+        <Class IRI="/SecureHashing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSustainabilityLabel"/>
+        <Class IRI="/SecurityConstraint"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSustainabilityLabel"/>
+        <Class IRI="/Signature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasAppAndService"/>
+        <Class IRI="/Asset"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasAsset"/>
+        <Class IRI="/Asset"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasAsset"/>
+        <Class IRI="/SecurityRequirement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasDevice"/>
+        <Class IRI="/Asset"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasDevice"/>
+        <Class IRI="/Infrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasInformation"/>
+        <Class IRI="/Asset"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasInformation"/>
+        <Class IRI="/Infrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasInfrastructure"/>
+        <Class IRI="/Asset"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasInfrastructure"/>
+        <Class IRI="/Device"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasInfrastructure"/>
+        <Class IRI="/Information"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasPlatform"/>
+        <Class IRI="/Asset"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasProperty"/>
+        <Class IRI="/SecurityConstraint"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasProperty"/>
+        <Class IRI="/SecurityFeature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasSecurityConstraint"/>
+        <Class IRI="/Property"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasSecurityConstraint"/>
+        <Class IRI="/SecurityFeature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasSecurityFeature"/>
+        <Class IRI="/SecurityRequirement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasSecurityLevel"/>
+        <Class IRI="/SecurityFeature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasUser"/>
+        <Class IRI="/Asset"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/isLessSecureThan"/>
+        <Class IRI="/SecurityLevel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/isLessSustainabilityThan"/>
+        <Class IRI="/SustainabilityLabel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/isMoreSecureThan"/>
+        <Class IRI="/SecurityLevel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/isMoreSustainabilityThan"/>
+        <Class IRI="/SustainabilityLabel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSustainabilityLabel"/>
+        <Class IRI="/SustainabilityLabel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasAppAndService"/>
+        <Class IRI="/AppAndService"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasAsset"/>
+        <Class IRI="/Asset"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasDevice"/>
+        <Class IRI="/Device"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasInformation"/>
+        <Class IRI="/Information"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasInfrastructure"/>
+        <Class IRI="/Infrastructure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasPlatform"/>
+        <Class IRI="/Platform"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasProperty"/>
+        <Class IRI="/Property"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasSecurityConstraint"/>
+        <Class IRI="/SecurityConstraint"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasSecurityFeature"/>
+        <Class IRI="/SecurityFeature"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasSecurityLevel"/>
+        <Class IRI="/SecurityLevel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasUser"/>
+        <Class IRI="/User"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/isLessSecureThan"/>
+        <Class IRI="/SecurityLevel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/isLessSustainabilityThan"/>
+        <Class IRI="/SustainabilityLabel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/isMoreSecureThan"/>
+        <Class IRI="/SecurityLevel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/isMoreSustainabilityThan"/>
+        <Class IRI="/SustainabilityLabel"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="/condition"/>
+        <Class IRI="/SecurityFeature"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/typeActuator"/>
+        <Class IRI="/Actuator"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/typeAppAndService"/>
+        <Class IRI="/AppAndService"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/typeCertificate"/>
+        <Class IRI="/Certificate"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/typeChannel"/>
+        <Class IRI="/Channel"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/typeCipher"/>
+        <Class IRI="/Cipher"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/typeController"/>
+        <Class IRI="/Controller"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/typeDatabase"/>
+        <Class IRI="/Database"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/typeDatastore"/>
+        <Class IRI="/Datastore"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/typeEcosystem"/>
+        <Class IRI="/Ecosystem"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/typeFirewall"/>
+        <Class IRI="/Firewall"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/typeHardware"/>
+        <Class IRI="/Hardware"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/typeNetwork"/>
+        <Class IRI="/Network"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/typePassword"/>
+        <Class IRI="/Password"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/typePlatform"/>
+        <Class IRI="/Platform"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/typeProperty"/>
+        <Class IRI="/Property"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/typeProtocol"/>
+        <Class IRI="/Protocol"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/typeRelationship"/>
+        <Class IRI="/SecurityRequirement"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/typeSecureHashing"/>
+        <Class IRI="/SecureHashing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/typeSensor"/>
+        <Class IRI="/Sensor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/typeService"/>
+        <Class IRI="/Service"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/typeSignature"/>
+        <Class IRI="/Signature"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="/typeUser"/>
+        <Class IRI="/User"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="/condition"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/typeActuator"/>
+        <Datatype IRI="/ActuatorType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/typeAppAndService"/>
+        <Datatype IRI="/AppType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/typeCertificate"/>
+        <Datatype IRI="/CertificateType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/typeChannel"/>
+        <Datatype IRI="/ChannelType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/typeCipher"/>
+        <Datatype IRI="/CipherType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/typeController"/>
+        <Datatype IRI="/ControllerType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/typeDatabase"/>
+        <Datatype IRI="/DatabaseType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/typeDatastore"/>
+        <Datatype IRI="/DatastoreType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/typeEcosystem"/>
+        <Datatype IRI="/EcosystemType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/typeFirewall"/>
+        <Datatype IRI="/FirewallType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/typeHardware"/>
+        <Datatype IRI="/HardwareType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/typeNetwork"/>
+        <Datatype IRI="/NetworkType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/typePassword"/>
+        <Datatype IRI="/PasswordType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/typePlatform"/>
+        <Datatype IRI="/PlatformType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/typeProperty"/>
+        <Datatype IRI="/PropertyType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/typeProtocol"/>
+        <Datatype IRI="/ProtocolType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/typeRelationship"/>
+        <Datatype IRI="/RelationshipType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/typeSecureHashing"/>
+        <Datatype IRI="/HashingType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/typeSensor"/>
+        <Datatype IRI="/SensorType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/typeService"/>
+        <Datatype IRI="/ServiceType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/typeSignature"/>
+        <Datatype IRI="/SignatureType"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="/typeUser"/>
+        <Datatype IRI="/UserType"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/Ecosystem</IRI>
+        <Literal>Ecosystem</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/Firewall</IRI>
+        <Literal>Firewall</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/Network</IRI>
+        <Literal>Network</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/Protocol</IRI>
+        <Literal>Protocol</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/SecurityDevice</IRI>
+        <Literal>SecurityDevice</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>/Service</IRI>
+        <Literal>Service</Literal>
+    </AnnotationAssertion>
+    <DatatypeDefinition>
+        <Datatype IRI="/ActuatorType"/>
+        <DataOneOf>
+            <Literal>TCPSCP</Literal>
+            <Literal>electric</Literal>
+            <Literal>hydraulic</Literal>
+            <Literal>magnetic</Literal>
+            <Literal>mechanical</Literal>
+            <Literal>pnematic</Literal>
+            <Literal>thermal</Literal>
+        </DataOneOf>
+    </DatatypeDefinition>
+    <DatatypeDefinition>
+        <Datatype IRI="/AppType"/>
+        <DataOneOf>
+            <Literal>analyticAndVisualization</Literal>
+            <Literal>deviceAndNetworkManagement</Literal>
+            <Literal>deviceUsage</Literal>
+        </DataOneOf>
+    </DatatypeDefinition>
+    <DatatypeDefinition>
+        <Datatype IRI="/CertificateType"/>
+        <DataOneOf>
+            <Literal>SAML</Literal>
+            <Literal>openPGP</Literal>
+            <Literal>openSSL</Literal>
+            <Literal>x509</Literal>
+        </DataOneOf>
+    </DatatypeDefinition>
+    <DatatypeDefinition>
+        <Datatype IRI="/ChannelType"/>
+        <DataOneOf>
+            <Literal>HTTPS</Literal>
+            <Literal>SSLTLS</Literal>
+            <Literal>tunneling</Literal>
+        </DataOneOf>
+    </DatatypeDefinition>
+    <DatatypeDefinition>
+        <Datatype IRI="/CipherType"/>
+        <DataOneOf>
+            <Literal>AES128GCM</Literal>
+            <Literal>Camellia</Literal>
+            <Literal>ChaCha20</Literal>
+        </DataOneOf>
+    </DatatypeDefinition>
+    <DatatypeDefinition>
+        <Datatype IRI="/ControllerType"/>
+        <DataOneOf>
+            <Literal>FPGA</Literal>
+            <Literal>microController</Literal>
+            <Literal>microProcessor</Literal>
+        </DataOneOf>
+    </DatatypeDefinition>
+    <DatatypeDefinition>
+        <Datatype IRI="/DatabaseType"/>
+        <DataOneOf>
+            <Literal>GraphDB</Literal>
+            <Literal>NoSQL</Literal>
+            <Literal>SQL</Literal>
+        </DataOneOf>
+    </DatatypeDefinition>
+    <DatatypeDefinition>
+        <Datatype IRI="/DatastoreType"/>
+        <DataOneOf>
+            <Literal>GPFS</Literal>
+            <Literal>HDFS</Literal>
+            <Literal>NFS</Literal>
+        </DataOneOf>
+    </DatatypeDefinition>
+    <DatatypeDefinition>
+        <Datatype IRI="/EcosystemType"/>
+        <DataOneOf>
+            <Literal>deviceManage</Literal>
+            <Literal>embeddedSystems</Literal>
+            <Literal>interface</Literal>
+        </DataOneOf>
+    </DatatypeDefinition>
+    <DatatypeDefinition>
+        <Datatype IRI="/FirewallType"/>
+        <DataOneOf>
+            <Literal>hardware</Literal>
+            <Literal>software</Literal>
+        </DataOneOf>
+    </DatatypeDefinition>
+    <DatatypeDefinition>
+        <Datatype IRI="/HardwareType"/>
+        <DataOneOf>
+            <Literal>gateway</Literal>
+            <Literal>powerSupply</Literal>
+            <Literal>router</Literal>
+        </DataOneOf>
+    </DatatypeDefinition>
+    <DatatypeDefinition>
+        <Datatype IRI="/HashingType"/>
+        <DataOneOf>
+            <Literal>SHA2</Literal>
+            <Literal>SHA3</Literal>
+        </DataOneOf>
+    </DatatypeDefinition>
+    <DatatypeDefinition>
+        <Datatype IRI="/NetworkType"/>
+        <DataOneOf>
+            <Literal>LAN</Literal>
+            <Literal>PAN</Literal>
+            <Literal>VPN</Literal>
+            <Literal>WAN</Literal>
+            <Literal>WLAN</Literal>
+            <Literal>WPAN</Literal>
+        </DataOneOf>
+    </DatatypeDefinition>
+    <DatatypeDefinition>
+        <Datatype IRI="/PasswordType"/>
+        <DataOneOf>
+            <Literal>multiFactor</Literal>
+            <Literal>strong</Literal>
+            <Literal>weak</Literal>
+        </DataOneOf>
+    </DatatypeDefinition>
+    <DatatypeDefinition>
+        <Datatype IRI="/PlatformType"/>
+        <DataOneOf>
+            <Literal>cloudInfrastructureAndServices</Literal>
+            <Literal>webBasedServices</Literal>
+        </DataOneOf>
+    </DatatypeDefinition>
+    <DatatypeDefinition>
+        <Datatype IRI="/PropertyType"/>
+        <DataOneOf>
+            <Literal>audit</Literal>
+            <Literal>authentication</Literal>
+            <Literal>authorisation</Literal>
+            <Literal>availability</Literal>
+            <Literal>confidentiality</Literal>
+            <Literal>detection</Literal>
+            <Literal>identification</Literal>
+            <Literal>integrity</Literal>
+            <Literal>nonRepudiation</Literal>
+            <Literal>privacy</Literal>
+            <Literal>trust</Literal>
+        </DataOneOf>
+    </DatatypeDefinition>
+    <DatatypeDefinition>
+        <Datatype IRI="/ProtocolType"/>
+        <DataOneOf>
+            <Literal>BLE</Literal>
+            <Literal>CoAPP</Literal>
+            <Literal>LoRaWAN</Literal>
+            <Literal>MQTT</Literal>
+            <Literal>RFID</Literal>
+            <Literal>Wifi</Literal>
+            <Literal>ZWave</Literal>
+            <Literal>ZigBee</Literal>
+        </DataOneOf>
+    </DatatypeDefinition>
+    <DatatypeDefinition>
+        <Datatype IRI="/RelationshipType"/>
+        <DataOneOf>
+            <Literal>auditGuaranteed</Literal>
+            <Literal>authenticatedUser</Literal>
+            <Literal>authorisedUser</Literal>
+            <Literal>detectionSystem</Literal>
+            <Literal>encryptedInformation</Literal>
+            <Literal>identifiedUser</Literal>
+            <Literal>nonRepudiationGuaranteed</Literal>
+            <Literal>privacyGuaranteed</Literal>
+            <Literal>secureCommunication</Literal>
+            <Literal>trustGuaranteed</Literal>
+        </DataOneOf>
+    </DatatypeDefinition>
+    <DatatypeDefinition>
+        <Datatype IRI="/SensorType"/>
+        <DataOneOf>
+            <Literal>accoustic</Literal>
+            <Literal>chemical</Literal>
+            <Literal>flowmeter</Literal>
+            <Literal>humidity</Literal>
+            <Literal>luminosity</Literal>
+            <Literal>motion</Literal>
+            <Literal>pressure</Literal>
+            <Literal>temperature</Literal>
+        </DataOneOf>
+    </DatatypeDefinition>
+    <DatatypeDefinition>
+        <Datatype IRI="/ServiceType"/>
+        <DataOneOf>
+            <Literal>IDSIPS</Literal>
+            <Literal>authenticationSystem</Literal>
+            <Literal>cloudAuthentication</Literal>
+        </DataOneOf>
+    </DatatypeDefinition>
+    <DatatypeDefinition>
+        <Datatype IRI="/SignatureType"/>
+        <DataOneOf>
+            <Literal>PSK</Literal>
+            <Literal>SRP</Literal>
+        </DataOneOf>
+    </DatatypeDefinition>
+    <DatatypeDefinition>
+        <Datatype IRI="/UserType"/>
+        <DataOneOf>
+            <Literal>consumer</Literal>
+            <Literal>process</Literal>
+            <Literal>provider</Literal>
+            <Literal>thirdParty</Literal>
+        </DataOneOf>
+    </DatatypeDefinition>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
