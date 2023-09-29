@@ -498,6 +498,19 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/AppAndService"/>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="0">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMinCardinality>
+            <ObjectMaxCardinality cardinality="1">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMaxCardinality>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/AppAndService"/>
         <ObjectExactCardinality cardinality="1">
             <ObjectProperty IRI="/hasAsset"/>
             <Class IRI="/Asset"/>
@@ -509,6 +522,19 @@
             <DataProperty IRI="/typeAppAndService"/>
             <Datatype IRI="/AppType"/>
         </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Asset"/>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="0">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMinCardinality>
+            <ObjectMaxCardinality cardinality="1">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMaxCardinality>
+        </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Asset"/>
@@ -558,6 +584,19 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Certificate"/>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="0">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMinCardinality>
+            <ObjectMaxCardinality cardinality="1">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMaxCardinality>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Certificate"/>
         <DataExactCardinality cardinality="1">
             <DataProperty IRI="/typeCertificate"/>
             <Datatype IRI="/CertificateType"/>
@@ -569,6 +608,19 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Channel"/>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="0">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMinCardinality>
+            <ObjectMaxCardinality cardinality="1">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMaxCardinality>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Channel"/>
         <DataExactCardinality cardinality="1">
             <DataProperty IRI="/typeChannel"/>
             <Datatype IRI="/ChannelType"/>
@@ -577,6 +629,19 @@
     <SubClassOf>
         <Class IRI="/Cipher"/>
         <Class IRI="/SecurityConstraint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Cipher"/>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="0">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMinCardinality>
+            <ObjectMaxCardinality cardinality="1">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMaxCardinality>
+        </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Cipher"/>
@@ -619,6 +684,19 @@
         </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="/Device"/>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="0">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMinCardinality>
+            <ObjectMaxCardinality cardinality="1">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMaxCardinality>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="/Ecosystem"/>
         <Class IRI="/Infrastructure"/>
     </SubClassOf>
@@ -652,6 +730,32 @@
         </DataExactCardinality>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="/Information"/>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="0">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMinCardinality>
+            <ObjectMaxCardinality cardinality="1">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMaxCardinality>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Infrastructure"/>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="0">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMinCardinality>
+            <ObjectMaxCardinality cardinality="1">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMaxCardinality>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="/Network"/>
         <Class IRI="/SecurityDevice"/>
     </SubClassOf>
@@ -668,10 +772,36 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Password"/>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="0">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMinCardinality>
+            <ObjectMaxCardinality cardinality="1">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMaxCardinality>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Password"/>
         <DataExactCardinality cardinality="1">
             <DataProperty IRI="/typePassword"/>
             <Datatype IRI="/PasswordType"/>
         </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Platform"/>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="0">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMinCardinality>
+            <ObjectMaxCardinality cardinality="1">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMaxCardinality>
+        </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Platform"/>
@@ -711,10 +841,36 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/SecureHashing"/>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="0">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMinCardinality>
+            <ObjectMaxCardinality cardinality="1">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMaxCardinality>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SecureHashing"/>
         <DataExactCardinality cardinality="1">
             <DataProperty IRI="/typeSecureHashing"/>
             <Datatype IRI="/HashingType"/>
         </DataExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SecurityConstraint"/>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="0">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMinCardinality>
+            <ObjectMaxCardinality cardinality="1">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMaxCardinality>
+        </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/SecurityConstraint"/>
@@ -793,6 +949,19 @@
     <SubClassOf>
         <Class IRI="/Signature"/>
         <Class IRI="/SecurityConstraint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Signature"/>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="0">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMinCardinality>
+            <ObjectMaxCardinality cardinality="1">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMaxCardinality>
+        </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Signature"/>
