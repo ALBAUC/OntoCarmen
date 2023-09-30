@@ -1,0 +1,124 @@
+
+App
+    AnalyticAndVisualizationApp
+    DeviceAndNetworkManagementApp
+    DeviceUsageApp
+Asset
+Device
+    Actuator
+        ElectricActuator
+        HydraulicActuator
+        MagneticActuator
+        MechanicalActuator
+        PnematicActuator
+        TCPSCPActuator
+        ThermalActuator
+    Controller
+        FPGAController
+        MicroController
+        MicroProcessorController
+    Sensor
+        AccousticSensor
+        ChemicalSensor
+        FlowmeterSensor
+        HumiditySensor
+        LuminositySensor
+        MotionSensor
+        PressureSensor
+        TemperatureSensor
+Information
+    Database
+        GraphDBDatabase
+        NoSQLDatabase
+        SQLDatabase
+    Datastore
+        GPFSDatastore
+        HDFSDatastore
+        NFSDatastore
+Infrastructure
+    Ecosystem
+        DeviceManageEcosystem
+        EmbeddedSystemsEcosystem
+        InterfaceEcosystem
+    Hardware
+        GatewayHardware
+        PowerSupplyHardware
+        RouterHardware
+    SecurityDevice
+        Firewall
+            HardwareFirewall
+            SoftwareFirewall
+        Network
+            LANNetwork
+            PANNetwork
+            VPNNetwork
+            WANNetwork
+            WLANNetwork
+            WPANNetwork
+        Protocol
+            BLEProtocol
+            CoAPPProtocol
+            LoRaWANProtocol
+            MQTTProtocol
+            RFIDProtocol
+            WifiProtocol
+            ZigBeeProtocol
+            ZWaveProtocol
+        Service
+            AuthenticationSystemService
+            CloudAuthenticationService
+            IDSIPSService
+
+
+Platform
+    CloudInfrastructureAndServicesPlatform
+    WebBasedServicesPlatform
+
+Property
+    AuditProperty
+    AuthenticationProperty
+    AuthorisationProperty
+    AvailabilityProperty
+    ConfidentialityProperty
+    DetectionProperty
+    IdentificationProperty
+    IntegrityProperty
+    NonRepudiationProperty
+    PrivacyProperty
+    TrustProperty
+    
+SecurityConstraint
+    Certificate
+        OpenPGPCertificate
+        OpenSSLCertificate
+        SAMLCertificate
+        X509Certificate
+    Channel
+        HTTPSChannel
+        SSLTLSChannel
+        TunnelingChannel
+    Cipher
+        AES128GCMCipher
+        CamelliaCipher
+        ChaCha20Cipher
+    Password
+        MultiFactorPassword
+        StrongPassword
+        WeakPassword
+    SecureHashing
+        SHA2SecureHashing
+        SHA3SecureHashing
+    Signature
+        PSKSignature
+        SRPSignature
+
+SecurityFeature
+SecurityLevel
+SecurityRequirement
+SustainabilityLabel
+
+User
+    ConsumerUser
+    ProcessUser
+    ProviderUser
+    ThirdPartyUser
