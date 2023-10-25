@@ -365,61 +365,40 @@
         <Class IRI="/User"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#assetHasApp"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#assetHasAsset"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#assetHasDevice"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#assetHasInformation"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#assetHasInfrastructure"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#assetHasPlatform"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#assetHasUser"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#deviceHasInfrastructure"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#hasSustainabilityLabel"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#informationHasInfrastructure"/>
+        <ObjectProperty IRI="/hasApp"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#infrastructureHasDevice"/>
+        <ObjectProperty IRI="/hasAsset"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#infrastructureHasInformation"/>
+        <ObjectProperty IRI="/hasDevice"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#propertyHasSecurityConstraint"/>
+        <ObjectProperty IRI="/hasInformation"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#securityConstraintHasProperty"/>
+        <ObjectProperty IRI="/hasInfrastructure"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#securityFeatureHasProperty"/>
+        <ObjectProperty IRI="/hasPlatform"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#securityFeatureHasSecurityConstraint"/>
+        <ObjectProperty IRI="/hasProperty"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#securityFeatureHasSecurityLevel"/>
+        <ObjectProperty IRI="/hasSecurityConstraint"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#securityRequirementHasAsset"/>
+        <ObjectProperty IRI="/hasSecurityFeature"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#securityRequirementHasSecurityFeature"/>
+        <ObjectProperty IRI="/hasSecurityLevel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="/hasUser"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="/isLessSecureThan"/>
@@ -991,57 +970,76 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/App"/>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="0">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMinCardinality>
+            <ObjectMaxCardinality cardinality="1">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMaxCardinality>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/App"/>
         <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#securityRequirementHasAsset"/>
+            <ObjectProperty IRI="/hasAsset"/>
             <Class IRI="/Asset"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Asset"/>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="0">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMinCardinality>
+            <ObjectMaxCardinality cardinality="1">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMaxCardinality>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Asset"/>
         <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="#assetHasApp"/>
+            <ObjectProperty IRI="/hasApp"/>
             <Class IRI="/App"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Asset"/>
         <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="#assetHasAsset"/>
-            <Class IRI="/Asset"/>
-        </ObjectMinCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Asset"/>
-        <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="#assetHasDevice"/>
+            <ObjectProperty IRI="/hasDevice"/>
             <Class IRI="/Device"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Asset"/>
         <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="#assetHasInformation"/>
+            <ObjectProperty IRI="/hasInformation"/>
             <Class IRI="/Information"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Asset"/>
         <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="#assetHasInfrastructure"/>
+            <ObjectProperty IRI="/hasInfrastructure"/>
             <Class IRI="/Infrastructure"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Asset"/>
         <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="#assetHasPlatform"/>
+            <ObjectProperty IRI="/hasPlatform"/>
             <Class IRI="/Platform"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Asset"/>
         <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="#assetHasUser"/>
+            <ObjectProperty IRI="/hasUser"/>
             <Class IRI="/User"/>
         </ObjectMinCardinality>
     </SubClassOf>
@@ -1050,12 +1048,51 @@
         <Class IRI="/SecurityConstraint"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="/Certificate"/>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="0">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMinCardinality>
+            <ObjectMaxCardinality cardinality="1">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMaxCardinality>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="/Channel"/>
         <Class IRI="/SecurityConstraint"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="/Channel"/>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="0">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMinCardinality>
+            <ObjectMaxCardinality cardinality="1">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMaxCardinality>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="/Cipher"/>
         <Class IRI="/SecurityConstraint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Cipher"/>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="0">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMinCardinality>
+            <ObjectMaxCardinality cardinality="1">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMaxCardinality>
+        </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Controller"/>
@@ -1071,10 +1108,16 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Device"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty IRI="#deviceHasInfrastructure"/>
-            <Class IRI="/Infrastructure"/>
-        </ObjectMinCardinality>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="0">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMinCardinality>
+            <ObjectMaxCardinality cardinality="1">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMaxCardinality>
+        </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Ecosystem"/>
@@ -1090,24 +1133,29 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Information"/>
-        <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="#informationHasInfrastructure"/>
-            <Class IRI="/Infrastructure"/>
-        </ObjectMinCardinality>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="0">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMinCardinality>
+            <ObjectMaxCardinality cardinality="1">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMaxCardinality>
+        </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Infrastructure"/>
-        <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="#infrastructureHasDevice"/>
-            <Class IRI="/Device"/>
-        </ObjectMinCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/Infrastructure"/>
-        <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="#infrastructureHasInformation"/>
-            <Class IRI="/Information"/>
-        </ObjectMinCardinality>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="0">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMinCardinality>
+            <ObjectMaxCardinality cardinality="1">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMaxCardinality>
+        </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/Network"/>
@@ -1118,9 +1166,35 @@
         <Class IRI="/SecurityConstraint"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="/Password"/>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="0">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMinCardinality>
+            <ObjectMaxCardinality cardinality="1">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMaxCardinality>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Platform"/>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="0">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMinCardinality>
+            <ObjectMaxCardinality cardinality="1">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMaxCardinality>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="/Property"/>
         <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="#propertyHasSecurityConstraint"/>
+            <ObjectProperty IRI="/hasSecurityConstraint"/>
             <Class IRI="/SecurityConstraint"/>
         </ObjectMinCardinality>
     </SubClassOf>
@@ -1133,9 +1207,35 @@
         <Class IRI="/SecurityConstraint"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="/SecureHashing"/>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="0">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMinCardinality>
+            <ObjectMaxCardinality cardinality="1">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMaxCardinality>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/SecurityConstraint"/>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="0">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMinCardinality>
+            <ObjectMaxCardinality cardinality="1">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMaxCardinality>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="/SecurityConstraint"/>
         <ObjectMinCardinality cardinality="1">
-            <ObjectProperty IRI="#securityConstraintHasProperty"/>
+            <ObjectProperty IRI="/hasProperty"/>
             <Class IRI="/Property"/>
         </ObjectMinCardinality>
     </SubClassOf>
@@ -1158,36 +1258,22 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/SecurityFeature"/>
-        <ObjectMinCardinality cardinality="1">
-            <ObjectProperty IRI="#securityFeatureHasProperty"/>
-            <Class IRI="/Property"/>
-        </ObjectMinCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/SecurityFeature"/>
-        <ObjectMinCardinality cardinality="0">
-            <ObjectProperty IRI="#securityFeatureHasSecurityConstraint"/>
-            <Class IRI="/SecurityConstraint"/>
-        </ObjectMinCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="/SecurityFeature"/>
         <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="#securityFeatureHasSecurityLevel"/>
+            <ObjectProperty IRI="/hasSecurityLevel"/>
             <Class IRI="/SecurityLevel"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/SecurityRequirement"/>
         <ObjectMinCardinality cardinality="1">
-            <ObjectProperty IRI="#securityRequirementHasAsset"/>
+            <ObjectProperty IRI="/hasAsset"/>
             <Class IRI="/Asset"/>
         </ObjectMinCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="/SecurityRequirement"/>
         <ObjectMinCardinality cardinality="1">
-            <ObjectProperty IRI="#securityRequirementHasSecurityFeature"/>
+            <ObjectProperty IRI="/hasSecurityFeature"/>
             <Class IRI="/SecurityFeature"/>
         </ObjectMinCardinality>
     </SubClassOf>
@@ -1209,6 +1295,19 @@
     <SubClassOf>
         <Class IRI="/Signature"/>
         <Class IRI="/SecurityConstraint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="/Signature"/>
+        <ObjectIntersectionOf>
+            <ObjectMinCardinality cardinality="0">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMinCardinality>
+            <ObjectMaxCardinality cardinality="1">
+                <ObjectProperty IRI="#hasSustainabilityLabel"/>
+                <Class IRI="/SustainabilityLabel"/>
+            </ObjectMaxCardinality>
+        </ObjectIntersectionOf>
     </SubClassOf>
     <DisjointClasses>
         <Class IRI="#AES128GCMCipher"/>
@@ -1599,6 +1698,161 @@
         <NamedIndividual IRI="/VeryLowSecurityLevel"/>
     </ClassAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasDevice"/>
+        <NamedIndividual IRI="#SR2-Asset-a1"/>
+        <NamedIndividual IRI="#SR2-Controller-ard"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasDevice"/>
+        <NamedIndividual IRI="#SR2-Asset-a1"/>
+        <NamedIndividual IRI="#SR2-Sensor-hum"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasDevice"/>
+        <NamedIndividual IRI="#SR2-Asset-a1"/>
+        <NamedIndividual IRI="#SR2-Sensor-light"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasDevice"/>
+        <NamedIndividual IRI="#SR2-Asset-a1"/>
+        <NamedIndividual IRI="#SR2-Sensor-temp"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasInfrastructure"/>
+        <NamedIndividual IRI="#SR2-Asset-a1"/>
+        <NamedIndividual IRI="#SR2-Network-net"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasInfrastructure"/>
+        <NamedIndividual IRI="#SR2-Asset-a1"/>
+        <NamedIndividual IRI="#SR2-Protocol-prot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasInformation"/>
+        <NamedIndividual IRI="#SR2-Asset-a2"/>
+        <NamedIndividual IRI="#SR2-Database-db"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasInformation"/>
+        <NamedIndividual IRI="#SR2-Asset-a2"/>
+        <NamedIndividual IRI="#SR2-Datastore-ds"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasSecurityConstraint"/>
+        <NamedIndividual IRI="#SR2-Property-p1"/>
+        <NamedIndividual IRI="#SR2-Cipher-c"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasSecurityConstraint"/>
+        <NamedIndividual IRI="#SR2-Property-p2"/>
+        <NamedIndividual IRI="#SR2-Channel-ch"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasSecurityLevel"/>
+        <NamedIndividual IRI="#SR2-SecurityFeature-sf1"/>
+        <NamedIndividual IRI="/VeryHighSecurityLevel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasSecurityLevel"/>
+        <NamedIndividual IRI="#SR2-SecurityFeature-sf2"/>
+        <NamedIndividual IRI="/HighSecurityLevel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasAsset"/>
+        <NamedIndividual IRI="#SR2-SecurityRequirement"/>
+        <NamedIndividual IRI="#SR2-Asset-a1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasAsset"/>
+        <NamedIndividual IRI="#SR2-SecurityRequirement"/>
+        <NamedIndividual IRI="#SR2-Asset-a2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasSecurityFeature"/>
+        <NamedIndividual IRI="#SR2-SecurityRequirement"/>
+        <NamedIndividual IRI="#SR2-SecurityFeature-sf1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasSecurityFeature"/>
+        <NamedIndividual IRI="#SR2-SecurityRequirement"/>
+        <NamedIndividual IRI="#SR2-SecurityFeature-sf2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasDevice"/>
+        <NamedIndividual IRI="#SR3-Asset-a1"/>
+        <NamedIndividual IRI="#SR3-Actuator-nut"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasDevice"/>
+        <NamedIndividual IRI="#SR3-Asset-a1"/>
+        <NamedIndividual IRI="#SR3-Controller-ard"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasInfrastructure"/>
+        <NamedIndividual IRI="#SR3-Asset-a1"/>
+        <NamedIndividual IRI="#SR3-Network-net"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasInfrastructure"/>
+        <NamedIndividual IRI="#SR3-Asset-a1"/>
+        <NamedIndividual IRI="#SR3-Protocol-prot"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasInfrastructure"/>
+        <NamedIndividual IRI="#SR3-Asset-a2"/>
+        <NamedIndividual IRI="#SR3-Service-s"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasUser"/>
+        <NamedIndividual IRI="#SR3-Asset-a2"/>
+        <NamedIndividual IRI="#SR3-User-user"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasSecurityConstraint"/>
+        <NamedIndividual IRI="#SR3-Property-p1"/>
+        <NamedIndividual IRI="#SR3-Certificate-cert"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasSecurityConstraint"/>
+        <NamedIndividual IRI="#SR3-Property-p2"/>
+        <NamedIndividual IRI="#SR3-Cipher-c"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasSecurityConstraint"/>
+        <NamedIndividual IRI="#SR3-Property-p3"/>
+        <NamedIndividual IRI="#SR3-Channel-ch2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasSecurityLevel"/>
+        <NamedIndividual IRI="#SR3-SecurityFeature-sf1"/>
+        <NamedIndividual IRI="/VeryHighSecurityLevel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasSecurityLevel"/>
+        <NamedIndividual IRI="#SR3-SecurityFeature-sf2"/>
+        <NamedIndividual IRI="/HighSecurityLevel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasAsset"/>
+        <NamedIndividual IRI="#SR3-SecurityRequirement"/>
+        <NamedIndividual IRI="#SR3-Asset-a1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasAsset"/>
+        <NamedIndividual IRI="#SR3-SecurityRequirement"/>
+        <NamedIndividual IRI="#SR3-Asset-a2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasSecurityFeature"/>
+        <NamedIndividual IRI="#SR3-SecurityRequirement"/>
+        <NamedIndividual IRI="#SR3-SecurityFeature-sf1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasSecurityFeature"/>
+        <NamedIndividual IRI="#SR3-SecurityRequirement"/>
+        <NamedIndividual IRI="#SR3-SecurityFeature-sf2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="/isMoreSustainabilityThan"/>
         <NamedIndividual IRI="/ASustainabilityLabel"/>
         <NamedIndividual IRI="/BSustainabilityLabel"/>
@@ -1659,6 +1913,86 @@
         <NamedIndividual IRI="/LowSecurityLevel"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasDevice"/>
+        <NamedIndividual IRI="/SR1-Asset-a"/>
+        <NamedIndividual IRI="/SR1-MicroController"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasDevice"/>
+        <NamedIndividual IRI="/SR1-Asset-a"/>
+        <NamedIndividual IRI="/SR1-TemperatureSensor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasInfrastructure"/>
+        <NamedIndividual IRI="/SR1-Asset-a"/>
+        <NamedIndividual IRI="#SR1-BLEProtocol"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasInfrastructure"/>
+        <NamedIndividual IRI="/SR1-Asset-a"/>
+        <NamedIndividual IRI="/SR1-RFIDProtocol"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasInfrastructure"/>
+        <NamedIndividual IRI="/SR1-Asset-a"/>
+        <NamedIndividual IRI="/SR1-WLAN"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasProperty"/>
+        <NamedIndividual IRI="/SR1-Camellia"/>
+        <NamedIndividual IRI="/SR1-ConfidentialityProperty"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasSecurityConstraint"/>
+        <NamedIndividual IRI="/SR1-ConfidentialityProperty"/>
+        <NamedIndividual IRI="/SR1-Camellia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasSecurityConstraint"/>
+        <NamedIndividual IRI="/SR1-ConfidentialityProperty"/>
+        <NamedIndividual IRI="/SR1-HTTPS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasProperty"/>
+        <NamedIndividual IRI="/SR1-HTTPS"/>
+        <NamedIndividual IRI="/SR1-ConfidentialityProperty"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasAsset"/>
+        <NamedIndividual IRI="/SR1-SecurityFeature-sf"/>
+        <NamedIndividual IRI="/SR1-Asset-a"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasProperty"/>
+        <NamedIndividual IRI="/SR1-SecurityFeature-sf"/>
+        <NamedIndividual IRI="/SR1-ConfidentialityProperty"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasSecurityConstraint"/>
+        <NamedIndividual IRI="/SR1-SecurityFeature-sf"/>
+        <NamedIndividual IRI="/SR1-Camellia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasSecurityConstraint"/>
+        <NamedIndividual IRI="/SR1-SecurityFeature-sf"/>
+        <NamedIndividual IRI="/SR1-HTTPS"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasSecurityLevel"/>
+        <NamedIndividual IRI="/SR1-SecurityFeature-sf"/>
+        <NamedIndividual IRI="/HighSecurityLevel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasAsset"/>
+        <NamedIndividual IRI="/SR1-SecurityRequirement"/>
+        <NamedIndividual IRI="/SR1-Asset-a"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="/hasSecurityFeature"/>
+        <NamedIndividual IRI="/SR1-SecurityRequirement"/>
+        <NamedIndividual IRI="/SR1-SecurityFeature-sf"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty IRI="/isMoreSecureThan"/>
         <NamedIndividual IRI="/VeryHighSecurityLevel"/>
         <NamedIndividual IRI="/HighSecurityLevel"/>
@@ -1703,21 +2037,9 @@
         <NamedIndividual IRI="/SR1-SecurityRequirement"/>
         <Literal>secureCommunication</Literal>
     </DataPropertyAssertion>
-    <SubObjectPropertyOf>
-        <ObjectProperty IRI="#assetHasDevice"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
     <InverseObjectProperties>
-        <ObjectProperty IRI="#deviceHasInfrastructure"/>
-        <ObjectProperty IRI="#infrastructureHasDevice"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="#informationHasInfrastructure"/>
-        <ObjectProperty IRI="#infrastructureHasInformation"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="#propertyHasSecurityConstraint"/>
-        <ObjectProperty IRI="#securityConstraintHasProperty"/>
+        <ObjectProperty IRI="/hasProperty"/>
+        <ObjectProperty IRI="/hasSecurityConstraint"/>
     </InverseObjectProperties>
     <InverseObjectProperties>
         <ObjectProperty IRI="/isLessSecureThan"/>
@@ -1728,173 +2050,182 @@
         <ObjectProperty IRI="/isMoreSustainabilityThan"/>
     </InverseObjectProperties>
     <InverseFunctionalObjectProperty>
-        <ObjectProperty IRI="#assetHasApp"/>
+        <ObjectProperty IRI="/hasApp"/>
     </InverseFunctionalObjectProperty>
     <InverseFunctionalObjectProperty>
-        <ObjectProperty IRI="#assetHasAsset"/>
+        <ObjectProperty IRI="/hasDevice"/>
     </InverseFunctionalObjectProperty>
     <InverseFunctionalObjectProperty>
-        <ObjectProperty IRI="#assetHasDevice"/>
+        <ObjectProperty IRI="/hasInformation"/>
     </InverseFunctionalObjectProperty>
     <InverseFunctionalObjectProperty>
-        <ObjectProperty IRI="#assetHasInformation"/>
+        <ObjectProperty IRI="/hasInfrastructure"/>
     </InverseFunctionalObjectProperty>
     <InverseFunctionalObjectProperty>
-        <ObjectProperty IRI="#assetHasInfrastructure"/>
+        <ObjectProperty IRI="/hasPlatform"/>
     </InverseFunctionalObjectProperty>
     <InverseFunctionalObjectProperty>
-        <ObjectProperty IRI="#assetHasPlatform"/>
-    </InverseFunctionalObjectProperty>
-    <InverseFunctionalObjectProperty>
-        <ObjectProperty IRI="#assetHasUser"/>
-    </InverseFunctionalObjectProperty>
-    <InverseFunctionalObjectProperty>
-        <ObjectProperty IRI="#securityFeatureHasProperty"/>
-    </InverseFunctionalObjectProperty>
-    <InverseFunctionalObjectProperty>
-        <ObjectProperty IRI="#securityFeatureHasSecurityConstraint"/>
+        <ObjectProperty IRI="/hasUser"/>
     </InverseFunctionalObjectProperty>
     <AsymmetricObjectProperty>
-        <ObjectProperty IRI="#assetHasApp"/>
+        <ObjectProperty IRI="/hasApp"/>
     </AsymmetricObjectProperty>
     <AsymmetricObjectProperty>
-        <ObjectProperty IRI="#assetHasAsset"/>
+        <ObjectProperty IRI="/hasAsset"/>
     </AsymmetricObjectProperty>
     <AsymmetricObjectProperty>
-        <ObjectProperty IRI="#assetHasDevice"/>
+        <ObjectProperty IRI="/hasDevice"/>
     </AsymmetricObjectProperty>
     <AsymmetricObjectProperty>
-        <ObjectProperty IRI="#assetHasInformation"/>
+        <ObjectProperty IRI="/hasInformation"/>
     </AsymmetricObjectProperty>
     <AsymmetricObjectProperty>
-        <ObjectProperty IRI="#assetHasInfrastructure"/>
+        <ObjectProperty IRI="/hasInfrastructure"/>
     </AsymmetricObjectProperty>
     <AsymmetricObjectProperty>
-        <ObjectProperty IRI="#assetHasPlatform"/>
+        <ObjectProperty IRI="/hasPlatform"/>
     </AsymmetricObjectProperty>
     <AsymmetricObjectProperty>
-        <ObjectProperty IRI="#assetHasUser"/>
+        <ObjectProperty IRI="/hasSecurityFeature"/>
     </AsymmetricObjectProperty>
     <AsymmetricObjectProperty>
-        <ObjectProperty IRI="#securityFeatureHasProperty"/>
-    </AsymmetricObjectProperty>
-    <AsymmetricObjectProperty>
-        <ObjectProperty IRI="#securityFeatureHasSecurityConstraint"/>
-    </AsymmetricObjectProperty>
-    <AsymmetricObjectProperty>
-        <ObjectProperty IRI="#securityRequirementHasAsset"/>
-    </AsymmetricObjectProperty>
-    <AsymmetricObjectProperty>
-        <ObjectProperty IRI="#securityRequirementHasSecurityFeature"/>
+        <ObjectProperty IRI="/hasUser"/>
     </AsymmetricObjectProperty>
     <IrreflexiveObjectProperty>
-        <ObjectProperty IRI="#assetHasApp"/>
+        <ObjectProperty IRI="/hasApp"/>
     </IrreflexiveObjectProperty>
     <IrreflexiveObjectProperty>
-        <ObjectProperty IRI="#assetHasAsset"/>
+        <ObjectProperty IRI="/hasAsset"/>
     </IrreflexiveObjectProperty>
     <IrreflexiveObjectProperty>
-        <ObjectProperty IRI="#assetHasDevice"/>
+        <ObjectProperty IRI="/hasDevice"/>
     </IrreflexiveObjectProperty>
     <IrreflexiveObjectProperty>
-        <ObjectProperty IRI="#assetHasInformation"/>
+        <ObjectProperty IRI="/hasInformation"/>
     </IrreflexiveObjectProperty>
     <IrreflexiveObjectProperty>
-        <ObjectProperty IRI="#assetHasInfrastructure"/>
+        <ObjectProperty IRI="/hasInfrastructure"/>
     </IrreflexiveObjectProperty>
     <IrreflexiveObjectProperty>
-        <ObjectProperty IRI="#assetHasPlatform"/>
+        <ObjectProperty IRI="/hasPlatform"/>
     </IrreflexiveObjectProperty>
     <IrreflexiveObjectProperty>
-        <ObjectProperty IRI="#assetHasUser"/>
+        <ObjectProperty IRI="/hasSecurityFeature"/>
     </IrreflexiveObjectProperty>
     <IrreflexiveObjectProperty>
-        <ObjectProperty IRI="#securityFeatureHasProperty"/>
-    </IrreflexiveObjectProperty>
-    <IrreflexiveObjectProperty>
-        <ObjectProperty IRI="#securityFeatureHasSecurityConstraint"/>
-    </IrreflexiveObjectProperty>
-    <IrreflexiveObjectProperty>
-        <ObjectProperty IRI="#securityRequirementHasAsset"/>
-    </IrreflexiveObjectProperty>
-    <IrreflexiveObjectProperty>
-        <ObjectProperty IRI="#securityRequirementHasSecurityFeature"/>
+        <ObjectProperty IRI="/hasUser"/>
     </IrreflexiveObjectProperty>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#assetHasApp"/>
+        <ObjectProperty IRI="#hasSustainabilityLabel"/>
+        <Class IRI="/App"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSustainabilityLabel"/>
         <Class IRI="/Asset"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#assetHasAsset"/>
-        <Class IRI="/Asset"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#assetHasDevice"/>
-        <Class IRI="/Asset"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#assetHasInformation"/>
-        <Class IRI="/Asset"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#assetHasInfrastructure"/>
-        <Class IRI="/Asset"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#assetHasPlatform"/>
-        <Class IRI="/Asset"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#assetHasUser"/>
-        <Class IRI="/Asset"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#deviceHasInfrastructure"/>
+        <ObjectProperty IRI="#hasSustainabilityLabel"/>
         <Class IRI="/Device"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasSustainabilityLabel"/>
-        <Class abbreviatedIRI="owl:Thing"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#informationHasInfrastructure"/>
         <Class IRI="/Information"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#infrastructureHasDevice"/>
+        <ObjectProperty IRI="#hasSustainabilityLabel"/>
         <Class IRI="/Infrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#infrastructureHasInformation"/>
-        <Class IRI="/Infrastructure"/>
+        <ObjectProperty IRI="#hasSustainabilityLabel"/>
+        <Class IRI="/Platform"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#propertyHasSecurityConstraint"/>
-        <Class IRI="/Property"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#securityConstraintHasProperty"/>
+        <ObjectProperty IRI="#hasSustainabilityLabel"/>
         <Class IRI="/SecurityConstraint"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#securityFeatureHasProperty"/>
+        <ObjectProperty IRI="#hasSustainabilityLabel"/>
         <Class IRI="/SecurityFeature"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#securityFeatureHasSecurityConstraint"/>
-        <Class IRI="/SecurityFeature"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#securityFeatureHasSecurityLevel"/>
-        <Class IRI="/SecurityFeature"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#securityRequirementHasAsset"/>
+        <ObjectProperty IRI="#hasSustainabilityLabel"/>
         <Class IRI="/SecurityRequirement"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#securityRequirementHasSecurityFeature"/>
+        <ObjectProperty IRI="#hasSustainabilityLabel"/>
+        <Class IRI="/User"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasApp"/>
+        <Class IRI="/Asset"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasAsset"/>
+        <Class IRI="/Asset"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasAsset"/>
         <Class IRI="/SecurityRequirement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasDevice"/>
+        <Class IRI="/Asset"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasDevice"/>
+        <Class IRI="/Infrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasInformation"/>
+        <Class IRI="/Asset"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasInformation"/>
+        <Class IRI="/Infrastructure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasInfrastructure"/>
+        <Class IRI="/Asset"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasInfrastructure"/>
+        <Class IRI="/Device"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasInfrastructure"/>
+        <Class IRI="/Information"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasPlatform"/>
+        <Class IRI="/Asset"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasProperty"/>
+        <Class IRI="/SecurityConstraint"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasProperty"/>
+        <Class IRI="/SecurityFeature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasSecurityConstraint"/>
+        <Class IRI="/Property"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasSecurityConstraint"/>
+        <Class IRI="/SecurityFeature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasSecurityFeature"/>
+        <Class IRI="/SecurityRequirement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasSecurityLevel"/>
+        <Class IRI="/SecurityFeature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="/hasUser"/>
+        <Class IRI="/Asset"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="/isLessSecureThan"/>
@@ -1913,80 +2244,52 @@
         <Class IRI="/SustainabilityLabel"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#assetHasApp"/>
+        <ObjectProperty IRI="#hasSustainabilityLabel"/>
+        <Class IRI="/SustainabilityLabel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasApp"/>
         <Class IRI="/App"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#assetHasAsset"/>
+        <ObjectProperty IRI="/hasAsset"/>
         <Class IRI="/Asset"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#assetHasDevice"/>
+        <ObjectProperty IRI="/hasDevice"/>
         <Class IRI="/Device"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#assetHasInformation"/>
+        <ObjectProperty IRI="/hasInformation"/>
         <Class IRI="/Information"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#assetHasInfrastructure"/>
+        <ObjectProperty IRI="/hasInfrastructure"/>
         <Class IRI="/Infrastructure"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#assetHasPlatform"/>
+        <ObjectProperty IRI="/hasPlatform"/>
         <Class IRI="/Platform"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#assetHasUser"/>
-        <Class IRI="/User"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#deviceHasInfrastructure"/>
-        <Class IRI="/Infrastructure"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasSustainabilityLabel"/>
-        <Class IRI="/SustainabilityLabel"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#informationHasInfrastructure"/>
-        <Class IRI="/Infrastructure"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#infrastructureHasDevice"/>
-        <Class IRI="/Device"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#infrastructureHasInformation"/>
-        <Class IRI="/Information"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#propertyHasSecurityConstraint"/>
-        <Class IRI="/SecurityConstraint"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#securityConstraintHasProperty"/>
+        <ObjectProperty IRI="/hasProperty"/>
         <Class IRI="/Property"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#securityFeatureHasProperty"/>
-        <Class IRI="/Property"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#securityFeatureHasSecurityConstraint"/>
+        <ObjectProperty IRI="/hasSecurityConstraint"/>
         <Class IRI="/SecurityConstraint"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#securityFeatureHasSecurityLevel"/>
+        <ObjectProperty IRI="/hasSecurityFeature"/>
+        <Class IRI="/SecurityFeature"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="/hasSecurityLevel"/>
         <Class IRI="/SecurityLevel"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#securityRequirementHasAsset"/>
-        <Class IRI="/Asset"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#securityRequirementHasSecurityFeature"/>
-        <Class IRI="/SecurityFeature"/>
+        <ObjectProperty IRI="/hasUser"/>
+        <Class IRI="/User"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="/isLessSecureThan"/>
