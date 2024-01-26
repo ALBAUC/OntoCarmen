@@ -13,6 +13,7 @@ Onto-CARMEN is a proposal designed as an ontology-based approach for the metamod
 - Previous article CARMEN with the metamodel and feature model on which the ontology is based: [pdf](/Papers/CI%20202021%20-%2020Carmen.pdf)
 
 
+
 ## Components
 
 It consists of:
