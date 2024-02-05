@@ -20,7 +20,7 @@ It consists of:
 
 ### Ontology
 
-Provides a framework for defining and classifying CPS security requirements. It uses OWL (Web Ontology Language) to formally represent the elements and their relationships. This ontology includes classes such as "Security Requirement", "Asset", "Security Feature", and properties to connect these elements. In addition, it includes axioms to impose constraints and logical rules.
+It provides a framework for defining and classifying CPS security requirements. It uses OWL (Web Ontology Language) to formally represent the elements and their relationships. This ontology includes classes such as "Security Requirement", "Asset", "Security Feature", and properties to connect these elements. In addition, it includes axioms to impose constraints and logical rules.
 
 ![](img/ontology.png)
 
@@ -28,7 +28,7 @@ Provides a framework for defining and classifying CPS security requirements. It 
 
 ### Reasoning Framework
 
-Use SPARQL rules to verify and diagnose safety requirements at design time. These rules allow to evaluate whether the security requirements are valid and, if not, to provide corrective actions.
+It uses SPARQL rules to verify and diagnose safety requirements at design time. These rules allow to evaluate whether the security requirements are valid and, if not, to provide corrective actions.
 
 Example of a SPARQL rule used to ensure that all security features using Camellia encryption are assigned a medium security level. If a security feature using Camellia has a different security level, the rule will update it to "MediumSecurityLevel".
 
