@@ -359,9 +359,6 @@
         <Class IRI="/Signature"/>
     </Declaration>
     <Declaration>
-        <Class IRI="/SustainabilityLabel"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="/User"/>
     </Declaration>
     <Declaration>
@@ -425,13 +422,7 @@
         <ObjectProperty IRI="/isLessSecureThan"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="/isLessSustainabilityThan"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="/isMoreSecureThan"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="/isMoreSustainabilityThan"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="/condition"/>
@@ -548,27 +539,6 @@
         <NamedIndividual IRI="#SR3-User-user"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="/ASustainabilityLabel"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/BSustainabilityLabel"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/CSustainabilityLabel"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/DSustainabilityLabel"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/ESustainabilityLabel"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/FSustainabilityLabel"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="/GSustainabilityLabel"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="/HighSecurityLevel"/>
     </Declaration>
     <Declaration>
@@ -627,18 +597,6 @@
             <NamedIndividual IRI="/MediumSecurityLevel"/>
             <NamedIndividual IRI="/VeryHighSecurityLevel"/>
             <NamedIndividual IRI="/VeryLowSecurityLevel"/>
-        </ObjectOneOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="/SustainabilityLabel"/>
-        <ObjectOneOf>
-            <NamedIndividual IRI="/ASustainabilityLabel"/>
-            <NamedIndividual IRI="/BSustainabilityLabel"/>
-            <NamedIndividual IRI="/CSustainabilityLabel"/>
-            <NamedIndividual IRI="/DSustainabilityLabel"/>
-            <NamedIndividual IRI="/ESustainabilityLabel"/>
-            <NamedIndividual IRI="/FSustainabilityLabel"/>
-            <NamedIndividual IRI="/GSustainabilityLabel"/>
         </ObjectOneOf>
     </EquivalentClasses>
     <SubClassOf>
@@ -1511,34 +1469,6 @@
         <NamedIndividual IRI="#SR3-User-user"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="/SustainabilityLabel"/>
-        <NamedIndividual IRI="/ASustainabilityLabel"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/SustainabilityLabel"/>
-        <NamedIndividual IRI="/BSustainabilityLabel"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/SustainabilityLabel"/>
-        <NamedIndividual IRI="/CSustainabilityLabel"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/SustainabilityLabel"/>
-        <NamedIndividual IRI="/DSustainabilityLabel"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/SustainabilityLabel"/>
-        <NamedIndividual IRI="/ESustainabilityLabel"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/SustainabilityLabel"/>
-        <NamedIndividual IRI="/FSustainabilityLabel"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="/SustainabilityLabel"/>
-        <NamedIndividual IRI="/GSustainabilityLabel"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class IRI="/SecurityLevel"/>
         <NamedIndividual IRI="/HighSecurityLevel"/>
     </ClassAssertion>
@@ -1598,36 +1528,6 @@
         <Class IRI="/SecurityLevel"/>
         <NamedIndividual IRI="/VeryLowSecurityLevel"/>
     </ClassAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="/isMoreSustainabilityThan"/>
-        <NamedIndividual IRI="/ASustainabilityLabel"/>
-        <NamedIndividual IRI="/BSustainabilityLabel"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="/isMoreSustainabilityThan"/>
-        <NamedIndividual IRI="/BSustainabilityLabel"/>
-        <NamedIndividual IRI="/CSustainabilityLabel"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="/isMoreSustainabilityThan"/>
-        <NamedIndividual IRI="/CSustainabilityLabel"/>
-        <NamedIndividual IRI="/DSustainabilityLabel"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="/isMoreSustainabilityThan"/>
-        <NamedIndividual IRI="/DSustainabilityLabel"/>
-        <NamedIndividual IRI="/ESustainabilityLabel"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="/isMoreSustainabilityThan"/>
-        <NamedIndividual IRI="/ESustainabilityLabel"/>
-        <NamedIndividual IRI="/FSustainabilityLabel"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="/isMoreSustainabilityThan"/>
-        <NamedIndividual IRI="/FSustainabilityLabel"/>
-        <NamedIndividual IRI="/GSustainabilityLabel"/>
-    </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="/isLessSecureThan"/>
         <NamedIndividual IRI="/HighSecurityLevel"/>
@@ -1722,10 +1622,6 @@
     <InverseObjectProperties>
         <ObjectProperty IRI="/isLessSecureThan"/>
         <ObjectProperty IRI="/isMoreSecureThan"/>
-    </InverseObjectProperties>
-    <InverseObjectProperties>
-        <ObjectProperty IRI="/isLessSustainabilityThan"/>
-        <ObjectProperty IRI="/isMoreSustainabilityThan"/>
     </InverseObjectProperties>
     <InverseFunctionalObjectProperty>
         <ObjectProperty IRI="#assetHasApp"/>
@@ -1901,16 +1797,8 @@
         <Class IRI="/SecurityLevel"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="/isLessSustainabilityThan"/>
-        <Class IRI="/SustainabilityLabel"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="/isMoreSecureThan"/>
         <Class IRI="/SecurityLevel"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="/isMoreSustainabilityThan"/>
-        <Class IRI="/SustainabilityLabel"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#assetHasApp"/>
@@ -1943,10 +1831,6 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#deviceHasInfrastructure"/>
         <Class IRI="/Infrastructure"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasSustainabilityLabel"/>
-        <Class IRI="/SustainabilityLabel"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#informationHasInfrastructure"/>
@@ -1993,16 +1877,8 @@
         <Class IRI="/SecurityLevel"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="/isLessSustainabilityThan"/>
-        <Class IRI="/SustainabilityLabel"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="/isMoreSecureThan"/>
         <Class IRI="/SecurityLevel"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="/isMoreSustainabilityThan"/>
-        <Class IRI="/SustainabilityLabel"/>
     </ObjectPropertyRange>
     <DataPropertyDomain>
         <DataProperty IRI="/condition"/>
@@ -2069,5 +1945,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
 
