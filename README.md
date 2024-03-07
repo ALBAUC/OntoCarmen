@@ -1,4 +1,3 @@
-[![DOI](https://zenodo.org/badge/10569512.svg)](https://zenodo.org/badge/latestdoi/10569512)
 
 # OntoCarmen
 
