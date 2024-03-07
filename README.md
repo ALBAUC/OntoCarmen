@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/10569512.svg)](https://zenodo.org/badge/latestdoi/10569512)
+
 # OntoCarmen
 
 Onto-CARMEN is a proposal designed as an ontology-based approach for the metamodeling and reasoning of Cyber-Physical Systems (CPS) security requirements.
